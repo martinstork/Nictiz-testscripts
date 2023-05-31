@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-model href="../../general/schematron/NictizTestScript.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TestScript xmlns="http://hl7.org/fhir" xmlns:nts="http://nictiz.nl/xsl/testscript" nts:scenario="client">
+    
+    <id value="Sending-XIS-scenario1"/>
+    <version value="r4-0.2.0-beta"/>
+    <name value="Sending-XIS-scenario1"/>
+    <description value="TO DO"/>
+
+</TestScript>
