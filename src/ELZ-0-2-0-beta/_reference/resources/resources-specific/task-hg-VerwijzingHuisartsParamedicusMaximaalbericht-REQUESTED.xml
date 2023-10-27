@@ -19,7 +19,7 @@
    <focus>
       <reference value="ServiceRequest/servicerequest-hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
       <type value="ServiceRequest"/>
-      <display value="Gezondheidscentrum de Brug"/>
+      <display value="envelop"/>
    </focus>
    <for>
       <reference value="Patient/patient-van-XXX-Sanderink-de-Kok"/>
@@ -30,11 +30,11 @@
    <requester>
       <reference value="PractitionerRole/practitionerrole-000001111"/>
       <type value="PractitionerRole"/>
-      <display value="Healthcare professional (role), Huisartsen, niet nader gespecificeerd, Gezondheidscentrum de Brug"/>
+      <display value="Healthcare professional (role)"/>
    </requester>
    <owner>
-      <reference value="PractitionerRole/practitionerrole-04115923"/>
-      <type value="PractitionerRole"/>
-      <display value="Healthcare professional (role), Fysiotherapeuten, fysiotherapie en manuele therapie, FysioHolland"/>
+      <reference value="Organization/organization-04086949"/>
+      <type value="Organization"/>
+      <display value="Healthcare provider (organization), organisation-id 04086949 in system 2.16.840.1.113883.2.4.6.1"/>
    </owner>
 </Task>
