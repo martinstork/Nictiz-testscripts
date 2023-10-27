@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    Test a receiving XIS to read the eOverdracht Task after getting a notification with the Task.id.
+    Test a receiving XIS to read the ELZ Task after getting a notification with the Task.id.
     @param taskStatus - The expected status of the Task. This is needed for the sanity check that a Task with the
     specified status is returned at this time in the process.
 -->
@@ -12,7 +12,7 @@
                 <code value="read" />
             </type>
             <resource value="Task"/>
-            <label value="Get Task resource for eOverdracht"/>
+            <label value="Get Task resource for ELZ"/>
             <accept value="xml" />
             <destination value="1"/>
             <origin value="1"/>

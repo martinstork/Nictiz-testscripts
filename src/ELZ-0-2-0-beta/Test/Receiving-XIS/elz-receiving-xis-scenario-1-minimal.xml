@@ -15,15 +15,15 @@
             href="resources/resources-specific/task-hg-VerwijzingHuisartsParamedicusMinimaalbericht-REQUESTED.xml"/>
         <nts:include value="setup.general.initializeTask"
             task-fixture-id="initial-task-fixture"
-            description="At the sending XIS, the Task resulting from the negotiation phase is updated with a reference to the nursing handoff Composition on Task.input."/>
+            description="At the sending XIS, the Task resulting from the negotiation phase is updated with a reference to the Servicerequest on Task.input."/>
     </setup>
 
     <nts:include value="action.receivingxis.awaitNotification"
-        name="Await nursing handoff addition notification"
+        name="Await addition notification"
         description="The sending XIS sends a notification to the receiving XIS because the Task has been updated with a reference to the Servicerequest."/>
     
     <test>
-        <name value="Read Task with nursing handoff"/>
+        <name value="Read Task"/>
         <description value="The receiving XIS should perform a read on the Task after receiving a notification that the Task has been updated."/>
         
         <nts:include value="test.receivingxis.readTask"
@@ -32,7 +32,7 @@
     </test>
     
     <test>
-        <name value="Read nursing handoff"/>
+        <name value="Read Servicerequest"/>
         <description value="After reading the Task, the receiving XIS should detect that a reference to the Servicerequest has been added and subsequently perform a read to retrieve this Servicerequest."/>
         
         <nts:include value="test.receivingxis.readServicerequest"
