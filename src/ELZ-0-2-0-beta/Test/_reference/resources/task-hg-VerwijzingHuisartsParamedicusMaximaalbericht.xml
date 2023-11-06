@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Task xmlns="http://hl7.org/fhir">
-   <id value="task-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
+   <id value="task-hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
    <meta>
       <profile value="http://nictiz.nl/fhir/StructureDefinition/hg-ReferralTask"/>
    </meta>
    <identifier>
-      <value value="hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
+      <value value="hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
    </identifier>
-   <status value="requested"/>
+   <status value="in-progress"/>
    <intent value="order"/>
    <code>
       <coding>
@@ -17,16 +17,16 @@
       </coding>
    </code>
    <focus>
-      <reference value="ServiceRequest/servicerequest-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
+      <reference value="ServiceRequest/servicerequest-hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
       <type value="ServiceRequest"/>
       <display value="envelop"/>
    </focus>
    <for>
-      <reference value="Patient/patient-XXX-Andrioli"/>
+      <reference value="Patient/patient-van-XXX-Sanderink-de-Kok"/>
       <type value="Patient"/>
-      <display value="Patient, XXX_Andrioli"/>
+      <display value="Patient, Sandra Janine (Sandra) van XXX_Sanderink"/>
    </for>
-   <authoredOn value="T"/>
+   <authoredOn value="${DATE}"/>
    <requester>
       <reference value="PractitionerRole/practitionerrole-000001111"/>
       <type value="PractitionerRole"/>

@@ -1,43 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<?xml-model href="../../general/schematron/NictizTestScript.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
-<TestScript xmlns="http://hl7.org/fhir" xmlns:nts="http://nictiz.nl/xsl/testscript" nts:scenario="client">
-    
+<?xml-model href="http://hl7.org/fhir/STU3/testscript.sch" type="application/xml" schematypens="http://purl.oclc.org/dsdl/schematron"?>
+<TestScript xmlns="http://hl7.org/fhir" xmlns:nts="http://nictiz.nl/xsl/testscript"
+    nts:scenario="XIS">
     <id value="elz-receiving-xis-scenario-1-minimal"/>
     <version value="R4"/>
-    <name value="ELZ-Receiving-XIS-scenario-1-minimal"/>
-    <description value="Scenario 1 minimal (beta) for Eerstelijnszorg receiving systems. In a normal scenario, the test for the negotiation phase ('aanmeldfase') has been completed before running this test, although it may be performed in isolation."/>
-    
-    <nts:authToken patientResourceId="nl-core-patient-eov-test-1-1b-01"/>    
-    
-    <setup>
-        <nts:fixture
-            id="initial-task-fixture"
-            href="resources/resources-specific/task-hg-VerwijzingHuisartsParamedicusMinimaalbericht-REQUESTED.xml"/>
-        <nts:include value="setup.general.initializeTask"
-            task-fixture-id="initial-task-fixture"
-            description="At the sending XIS, the Task resulting from the negotiation phase is updated with a reference to the Servicerequest on Task.input."/>
-    </setup>
+    <name value="ELZ - Receiving XIS - Scenario 1.1 - Retrieve ELZ resources of XXX-Andrioli"/>
+    <description value="Scenario 1.1 - Retrieve ELZ resources of XXX-Andrioli"/>
+    <nts:authToken patientResourceId="patient-XXX-Andrioli"/>
 
-    <nts:include value="action.receivingxis.awaitNotification"
-        name="Await addition notification"
-        description="The sending XIS sends a notification to the receiving XIS because the Task has been updated with a reference to the Servicerequest."/>
-    
-    <test>
-        <name value="Read Task"/>
-        <description value="The receiving XIS should perform a read on the Task after receiving a notification that the Task has been updated."/>
-        
-        <nts:include value="test.receivingxis.readTask"
-            taskStatus="in-progress"
-            responseId="in-progress-task-response"/>
+    <test id="01-retrieve-Task">
+        <name value="Scenario 1.1 - Task"/>
+        <description
+            value="Query Task resource"/>
+        <nts:include value="test.client.search" scope="common"
+            resource="Task"
+            params="?_id=task-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
+        <nts:include value="canary-assert.response.successfulSearch" scope="common"/>
+        <nts:include value="assert.response.numResources" scope="common"
+            resource="Task" count="1"/>
     </test>
-    
-    <test>
-        <name value="Read Servicerequest"/>
-        <description value="After reading the Task, the receiving XIS should detect that a reference to the Servicerequest has been added and subsequently perform a read to retrieve this Servicerequest."/>
-        
-        <nts:include value="test.receivingxis.readServicerequest"
-            taskFixtureId="in-progress-task-response"
-            sliceSystem="http://snomed.info/sct" sliceCode="3457005"/>
+
+    <test id="02-retrieve-ServiceRequest">
+        <name value="Scenario 1.1 - ServiceRequest"/>
+        <description value="Query ServiceRequest resource"/>
+        <nts:include value="test.client.search" scope="common" resource="ServiceRequest"
+            params="?_id=servicerequest-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
+        <nts:include value="canary-assert.response.successfulSearch" scope="common"/>
+        <nts:include value="assert.response.numResources" scope="common" 
+            resource="ServiceRequest" count="1"/>
+    </test>
+
+    <test id="03-retrieve-Composition">
+        <name value="Scenario 1.1 - Composition"/>
+        <description value="Query Composition resource and bundle all the references"/>
+        <nts:include value="test.client.search" scope="common" resource="Composition"
+            params="_id=composition-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
+        <nts:include value="canary-assert.response.successfulSearch" scope="common"/>
+        <nts:include value="assert.response.numResources" scope="common" 
+            resource="Composition" count="1"/>
     </test>
 
 </TestScript>
