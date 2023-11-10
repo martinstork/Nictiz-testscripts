@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestScript xmlns="http://hl7.org/fhir" xmlns:nts="http://nictiz.nl/xsl/testscript">
-   <id value="elz-receiving-xis-scenario-1-minimal"/>
+   <id value="elz-receiving-xis-scenario-1-maximaal"/>
    <meta>
       <profile value="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript"/>
    </meta>
-   <url value="http://nictiz.nl/fhir/TestScript/elz-receiving-xis-scenario-1-minimal"/>
+   <url value="http://nictiz.nl/fhir/TestScript/elz-receiving-xis-scenario-1-maximaal"/>
    <version value="R4-patchlevel 2023-10"/>
-   <name value="ELZ - Receiving XIS - Scenario 1 - Retrieve ELZ resources of XXX-Andrioli"/>
+   <name value="ELZ - Receiving XIS - Scenario 1 - Retrieve ELZ resources of van-XXX-Sanderink-de-Kok"/>
    <status value="active"/>
    <publisher value="Nictiz"/>
    <contact>
@@ -17,7 +17,7 @@
          <use value="work"/>
       </telecom>
    </contact>
-   <description value="Scenario 1 - Retrieve ELZ resources of XXX-Andrioli"/>
+   <description value="Scenario 1 - Retrieve ELZ resources of van-XXX-Sanderink-de-Kok"/>
    <origin>
       <index value="1"/>
       <profile>
@@ -46,10 +46,10 @@
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
-            <params value="?_id=task-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
+            <params value="?_id=task-hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
             <requestHeader>
                <field value="Authorization"/>
-               <value value="Bearer 9we86dg8-aab0-4417-9b3c-e6f635892fea"/>
+               <value value="Bearer 6wfue3a9-aab0-4417-9b3c-e6f635892fea"/>
             </requestHeader>
          </operation>
       </action>
@@ -101,10 +101,10 @@
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
-            <params value="?_id=servicerequest-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
+            <params value="?_id=servicerequest-hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
             <requestHeader>
                <field value="Authorization"/>
-               <value value="Bearer 9we86dg8-aab0-4417-9b3c-e6f635892fea"/>
+               <value value="Bearer 6wfue3a9-aab0-4417-9b3c-e6f635892fea"/>
             </requestHeader>
          </operation>
       </action>
@@ -156,10 +156,10 @@
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
-            <params value="$document?id=composition-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
+            <params value="$document?id=composition-hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
             <requestHeader>
                <field value="Authorization"/>
-               <value value="Bearer 9we86dg8-aab0-4417-9b3c-e6f635892fea"/>
+               <value value="Bearer 6wfue3a9-aab0-4417-9b3c-e6f635892fea"/>
             </requestHeader>
          </operation>
       </action>
