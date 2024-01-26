@@ -8,7 +8,7 @@
     <div xmlns="http://www.w3.org/1999/xhtml">
       <b>Referral note</b>
       <table>
-        <caption>Samengestelde informatie. Subject: Patient, Sandra Janine (Sandra) van XXX_Sanderink. Id: hg-VerwijzingHuisartsParamedicusMaximaalbericht, Status: definitief<span style="display: block;">Auteur: Healthcare professional (role), Huisartsen, niet nader gespecificeerd, Gezondheidscentrum de Brug</span>
+        <caption>Samengestelde informatie. Subject: Patient, Sandra Janine (Sandra) van XXX_Sanderink. Id: hg-VerwijzingHuisartsParamedicusMaximaalbericht (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), Status: definitief<span style="display: block;">Auteur: Healthcare professional (role), Huisartsen, niet nader gespecificeerd, Gezondheidscentrum de Brug</span>
         </caption>
         <tbody>
           <tr>
@@ -26,6 +26,7 @@
     </div>
   </text>
   <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7"/>
     <value value="hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
   </identifier>
   <status value="final"/>

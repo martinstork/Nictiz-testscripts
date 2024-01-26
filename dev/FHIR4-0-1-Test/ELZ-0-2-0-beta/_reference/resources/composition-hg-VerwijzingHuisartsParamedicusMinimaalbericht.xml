@@ -8,7 +8,7 @@
     <div xmlns="http://www.w3.org/1999/xhtml">
       <b>Referral note</b>
       <table>
-        <caption>Samengestelde informatie. Subject: Patient, XXX_Andrioli. Id: hg-VerwijzingHuisartsParamedicusMinimaalbericht, Status: definitief<span style="display: block;">Auteur: Healthcare professional (role)</span>
+        <caption>Samengestelde informatie. Subject: Patient, XXX_Andrioli. Id: hg-VerwijzingHuisartsParamedicusMinimaalbericht (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), Status: definitief<span style="display: block;">Auteur: Healthcare professional (role)</span>
         </caption>
         <tbody>
           <tr>
@@ -26,6 +26,7 @@
     </div>
   </text>
   <identifier>
+    <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7"/>
     <value value="hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
   </identifier>
   <status value="final"/>
