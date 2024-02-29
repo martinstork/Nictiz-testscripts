@@ -39,10 +39,10 @@
          <operation>
             <type>
                <system value="http://terminology.hl7.org/CodeSystem/testscript-operation-codes"/>
-               <code value="search"/>
+               <code value="read"/>
             </type>
             <resource value="Task"/>
-            <description value="Test Client to retrieve Task resources."/>
+            <description value="Test client to read Task resource."/>
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
@@ -52,28 +52,6 @@
                <value value="Bearer 9we86dg8-aab0-4417-9b3c-e6f635892fea"/>
             </requestHeader>
          </operation>
-      </action>
-      <action>
-         <assert>
-            <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
-               <valueBoolean value="true"/>
-            </extension>
-            <description value="Make sure that the test server (WildFHIR) gives a success response."/>
-            <operator value="in"/>
-            <responseCode value="200,201"/>
-            <warningOnly value="false"/>
-         </assert>
-      </action>
-      <action>
-         <assert>
-            <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
-               <valueBoolean value="false"/>
-            </extension>
-            <description value="Confirm that the test server (WildFHIR) returns a Bundle."/>
-            <direction value="response"/>
-            <resource value="Bundle"/>
-            <warningOnly value="false"/>
-         </assert>
       </action>
       <action>
          <assert>
@@ -94,10 +72,10 @@
          <operation>
             <type>
                <system value="http://terminology.hl7.org/CodeSystem/testscript-operation-codes"/>
-               <code value="search"/>
+               <code value="read"/>
             </type>
             <resource value="ServiceRequest"/>
-            <description value="Test Client to retrieve ServiceRequest resources."/>
+            <description value="Test client to read ServiceRequest resource."/>
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
@@ -107,28 +85,6 @@
                <value value="Bearer 9we86dg8-aab0-4417-9b3c-e6f635892fea"/>
             </requestHeader>
          </operation>
-      </action>
-      <action>
-         <assert>
-            <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
-               <valueBoolean value="true"/>
-            </extension>
-            <description value="Make sure that the test server (WildFHIR) gives a success response."/>
-            <operator value="in"/>
-            <responseCode value="200,201"/>
-            <warningOnly value="false"/>
-         </assert>
-      </action>
-      <action>
-         <assert>
-            <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
-               <valueBoolean value="false"/>
-            </extension>
-            <description value="Confirm that the test server (WildFHIR) returns a Bundle."/>
-            <direction value="response"/>
-            <resource value="Bundle"/>
-            <warningOnly value="false"/>
-         </assert>
       </action>
       <action>
          <assert>
@@ -149,10 +105,10 @@
          <operation>
             <type>
                <system value="http://terminology.hl7.org/CodeSystem/testscript-operation-codes"/>
-               <code value="search"/>
+               <code value="read"/>
             </type>
             <resource value="Composition"/>
-            <description value="Test Client to retrieve Composition resources."/>
+            <description value="Test client to read Composition resource."/>
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
@@ -162,28 +118,6 @@
                <value value="Bearer 9we86dg8-aab0-4417-9b3c-e6f635892fea"/>
             </requestHeader>
          </operation>
-      </action>
-      <action>
-         <assert>
-            <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
-               <valueBoolean value="true"/>
-            </extension>
-            <description value="Make sure that the test server (WildFHIR) gives a success response."/>
-            <operator value="in"/>
-            <responseCode value="200,201"/>
-            <warningOnly value="false"/>
-         </assert>
-      </action>
-      <action>
-         <assert>
-            <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
-               <valueBoolean value="false"/>
-            </extension>
-            <description value="Confirm that the test server (WildFHIR) returns a Bundle."/>
-            <direction value="response"/>
-            <resource value="Bundle"/>
-            <warningOnly value="false"/>
-         </assert>
       </action>
       <action>
          <assert>
