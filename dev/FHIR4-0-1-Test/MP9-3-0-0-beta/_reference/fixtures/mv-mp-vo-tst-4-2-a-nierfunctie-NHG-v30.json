@@ -189,7 +189,7 @@
       "url": "MedicationRequest"
     }
   }, {
-    "fullUrl": "urn:uuid:36478a8a-bc03-11ed-1316-020000000000",
+    "fullUrl": "urn:uuid:b0bb6120-b936-11ee-1665-020000000000",
     "resource": {
       "resourceType": "Observation",
       "meta": {
@@ -229,7 +229,7 @@
       },
       "effectiveDateTime": "${DATE, T, D, -20}",
       "performer": [ {
-        "reference": "urn:uuid:36478a4e-bc03-11ed-1316-020000000000",
+        "reference": "urn:uuid:b0bb60e4-b936-11ee-1665-020000000000",
         "type": "Organization",
         "display": "Healthcare provider (organization), Klinisch chemisch Lab 't Proefje"
       } ],
@@ -243,7 +243,7 @@
         "text": "Iets bovengemiddeld"
       } ],
       "specimen": {
-        "reference": "urn:uuid:36478ae4-bc03-11ed-1316-020000000000",
+        "reference": "urn:uuid:b0bb617a-b936-11ee-1665-020000000000",
         "type": "Specimen",
         "display": "monster"
       },
@@ -261,7 +261,7 @@
       "url": "Observation"
     }
   }, {
-    "fullUrl": "urn:uuid:36478aa8-bc03-11ed-1316-020000000000",
+    "fullUrl": "urn:uuid:b0bb613e-b936-11ee-1665-020000000000",
     "resource": {
       "resourceType": "Observation",
       "meta": {
@@ -301,7 +301,7 @@
       },
       "effectiveDateTime": "${DATE, T, D, -20}",
       "performer": [ {
-        "reference": "urn:uuid:36478a4e-bc03-11ed-1316-020000000000",
+        "reference": "urn:uuid:b0bb60e4-b936-11ee-1665-020000000000",
         "type": "Organization",
         "display": "Healthcare provider (organization), Klinisch chemisch Lab 't Proefje"
       } ],
@@ -332,7 +332,7 @@
         } ]
       },
       "specimen": {
-        "reference": "urn:uuid:36478ae4-bc03-11ed-1316-020000000000",
+        "reference": "urn:uuid:b0bb617a-b936-11ee-1665-020000000000",
         "type": "Specimen",
         "display": "monster"
       },
@@ -356,7 +356,7 @@
       "url": "Observation"
     }
   }, {
-    "fullUrl": "urn:uuid:36478ae4-bc03-11ed-1316-020000000000",
+    "fullUrl": "urn:uuid:b0bb617a-b936-11ee-1665-020000000000",
     "resource": {
       "resourceType": "Specimen",
       "meta": {
@@ -364,12 +364,19 @@
       },
       "text": {
         "status": "extensions",
-        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n              <caption>Specimen. Subject: Patient, Eduardo XXX_Doppen. Id: 1111 (urn:oid:2.16.840.1.113883.2.4.3.11.999.25.4267.2)</caption>\n              <tfoot>\n                <tr>\n                  <td colspan=\"2\">Serum afgenomen bij patiënt.</td>\n                </tr>\n              </tfoot>\n              <tbody>\n                <tr>\n                  <th>Inzameling</th>\n                  <td>${DATE, T, D, -20}</td>\n                </tr>\n              </tbody>\n            </table>\n          </div>"
+        "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n            <table>\n              <caption>Specimen. Subject: Patient, Eduardo XXX_Doppen. Id: 1111 (urn:oid:2.16.840.1.113883.2.4.3.11.999.25.4267.2)</caption>\n              <tfoot>\n                <tr>\n                  <td colspan=\"2\">Serum afgenomen bij patiÃ«nt.</td>\n                </tr>\n              </tfoot>\n              <tbody>\n                <tr>\n                  <th>Type</th>\n                  <td>\n                    <span title=\"Bloed (87612001 - SNOMED CT)\">Bloed</span>\n                  </td>\n                </tr>\n                <tr>\n                  <th>Inzameling</th>\n                  <td>${DATE, T, D, -20}</td>\n                </tr>\n              </tbody>\n            </table>\n          </div>"
       },
       "identifier": [ {
         "system": "urn:oid:2.16.840.1.113883.2.4.3.11.999.25.4267.2",
         "value": "1111"
       } ],
+      "type": {
+        "coding": [ {
+          "system": "http://snomed.info/sct",
+          "code": "87612001",
+          "display": "Bloed"
+        } ]
+      },
       "subject": {
         "reference": "urn:uuid:834e3f9e-6ad4-11ec-0000-020000000000",
         "type": "Patient",
@@ -379,7 +386,7 @@
         "collectedDateTime": "${DATE, T, D, -20}"
       },
       "note": [ {
-        "text": "Serum afgenomen bij patiënt."
+        "text": "Serum afgenomen bij patiÃ«nt."
       } ]
     },
     "request": {
@@ -595,7 +602,7 @@
       "url": "Organization"
     }
   }, {
-    "fullUrl": "urn:uuid:36478a4e-bc03-11ed-1316-020000000000",
+    "fullUrl": "urn:uuid:b0bb60e4-b936-11ee-1665-020000000000",
     "resource": {
       "resourceType": "Organization",
       "meta": {
@@ -612,7 +619,7 @@
       "type": [ {
         "coding": [ {
           "system": "http://nictiz.nl/fhir/NamingSystem/organization-type",
-          "version": "2022-07-07T00:00:00",
+          "version": "2022-09-10T00:00:00",
           "code": "L1",
           "display": "Laboratorium"
         } ]
