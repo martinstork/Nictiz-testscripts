@@ -17,7 +17,10 @@
             params="?_id=task-hg-VerwijzingHuisartsParamedicusMaximaalbericht"
             useToken="true"/>
         <nts:include value="assert.response.numResources" scope="common"
-            resource="Task" count="1"/>
+            resource="Task" count="1" nts:in-targets="#default"/>
+        
+        <nts:contentAsserts href="resources/task-hg-VerwijzingHuisartsParamedicusMaximaalbericht.xml" nts:in-targets="CheckContent"/>
+        
     </test>
 
     <test id="02-serve-ServiceRequest">
@@ -27,7 +30,10 @@
             params="?_id=servicerequest-hg-VerwijzingHuisartsParamedicusMaximaalbericht"
             useToken="true"/>
         <nts:include value="assert.response.numResources" scope="common" 
-            resource="ServiceRequest" count="1"/>
+            resource="ServiceRequest" count="1" nts:in-targets="#default"/>
+                
+        <nts:contentAsserts href="resources/servicerequest-hg-VerwijzingHuisartsParamedicusMaximaalbericht.xml" nts:in-targets="CheckContent"/>
+        
     </test>
 
     <test id="03-serve-Composition">
@@ -37,7 +43,10 @@
             params="$document?id=composition-hg-VerwijzingHuisartsParamedicusMaximaalbericht"
             useToken="true"/>
         <nts:include value="assert.response.numResources" scope="common" 
-            resource="Composition" count="1"/>
+            resource="Composition" count="1" nts:in-targets="#default"/>
+        
+        <nts:contentAsserts href="resources/composition-hg-VerwijzingHuisartsParamedicusMaximaalbericht.xml" nts:in-targets="CheckContent"/>      
+        
     </test>
 
 </TestScript>
