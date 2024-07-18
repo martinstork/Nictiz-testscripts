@@ -19,7 +19,8 @@
         <nts:include value="assert.response.numResources" scope="common"
             resource="Task" count="1" nts:in-targets="#default"/>
         
-        <nts:contentAsserts href="resources/task-hg-VerwijzingHuisartsParamedicusMaximaalbericht.xml" nts:in-targets="CheckContent"/>
+        <nts:contentAsserts href="resources/task-hg-VerwijzingHuisartsParamedicusMaximaalbericht.xml" 
+            description="contains .code.coding.code = '3457005'" discriminator="code.where(coding.where(code = '3457005'))" nts:in-targets="CheckContent"/>
         
     </test>
 
@@ -32,7 +33,8 @@
         <nts:include value="assert.response.numResources" scope="common" 
             resource="ServiceRequest" count="1" nts:in-targets="#default"/>
                 
-        <nts:contentAsserts href="resources/servicerequest-hg-VerwijzingHuisartsParamedicusMaximaalbericht.xml" nts:in-targets="CheckContent"/>
+        <nts:contentAsserts href="resources/servicerequest-hg-VerwijzingHuisartsParamedicusMaximaalbericht.xml"
+            description="contains .category.coding.code = '1'" discriminator="category.where(coding.where(code = '1'))" nts:in-targets="CheckContent"/>
         
     </test>
 
@@ -45,7 +47,8 @@
         <nts:include value="assert.response.numResources" scope="common" 
             resource="Composition" count="1" nts:in-targets="#default"/>
         
-        <nts:contentAsserts href="resources/composition-hg-VerwijzingHuisartsParamedicusMaximaalbericht.xml" nts:in-targets="CheckContent"/>      
+        <nts:contentAsserts href="resources/composition-hg-VerwijzingHuisartsParamedicusMaximaalbericht.xml"
+            description="contains .type.coding.code = '57133-1'" discriminator="type.where(coding.where(code = '57133-1'))" nts:in-targets="CheckContent"/>
         
     </test>
 

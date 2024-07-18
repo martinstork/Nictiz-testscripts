@@ -5,7 +5,7 @@
       <profile value="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript"/>
    </meta>
    <url value="http://nictiz.nl/fhir/TestScript/elz-serving-xis-scenario-2-minimal-xml"/>
-   <version value="R4-patchlevel 2023-10"/>
+   <version value="R4-patchlevel 2024-03"/>
    <name value="ELZ - Serving XIS - Scenario 2 - Serving ELZ resources of XXX-Andrioli - XML Format"/>
    <status value="active"/>
    <publisher value="Nictiz"/>
@@ -75,9 +75,9 @@
             <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
                <valueBoolean value="false"/>
             </extension>
-            <description value="Confirm that all coding elements contain both a .system and a .code."/>
+            <description value="Confirm that all Coding elements contain both a .system and a .code."/>
             <direction value="response"/>
-            <expression value="Task.descendants().where($this.is(coding)).all(system.exists() and code.exists())"/>
+            <expression value="Task.descendants().where($this.is(Coding)).all(system.exists() and code.exists())"/>
             <warningOnly value="false"/>
          </assert>
       </action>
@@ -175,9 +175,9 @@
             <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
                <valueBoolean value="false"/>
             </extension>
-            <description value="Confirm that all coding elements contain both a .system and a .code."/>
+            <description value="Confirm that all Coding elements contain both a .system and a .code."/>
             <direction value="response"/>
-            <expression value="ServiceRequest.descendants().where($this.is(coding)).all(system.exists() and code.exists())"/>
+            <expression value="ServiceRequest.descendants().where($this.is(Coding)).all(system.exists() and code.exists())"/>
             <warningOnly value="false"/>
          </assert>
       </action>
@@ -275,9 +275,9 @@
             <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
                <valueBoolean value="false"/>
             </extension>
-            <description value="Confirm that all coding elements contain both a .system and a .code."/>
+            <description value="Confirm that all Coding elements contain both a .system and a .code."/>
             <direction value="response"/>
-            <expression value="Composition.descendants().where($this.is(coding)).all(system.exists() and code.exists())"/>
+            <expression value="Composition.descendants().where($this.is(Coding)).all(system.exists() and code.exists())"/>
             <warningOnly value="false"/>
          </assert>
       </action>
