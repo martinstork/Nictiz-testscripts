@@ -14,30 +14,24 @@
             value="Query Task resource"/>
         <nts:include value="test.client.read" scope="common"
             resource="Task"
-            params="?_id=task-hg-VerwijzingHuisartsParamedicusMinimaalbericht"
+            params="/task-hg-VerwijzingHuisartsParamedicusMinimaalbericht"
             useToken="true"/>
-        <nts:include value="assert.response.numResources" scope="common"
-            resource="Task" count="1"/>
     </test>
 
     <test id="02-retrieve-ServiceRequest">
         <name value="Scenario 2.2 - ServiceRequest"/>
         <description value="Query ServiceRequest resource"/>
         <nts:include value="test.client.read" scope="common" resource="ServiceRequest"
-            params="?_id=servicerequest-hg-VerwijzingHuisartsParamedicusMinimaalbericht"
+            params="/servicerequest-hg-VerwijzingHuisartsParamedicusMinimaalbericht"
             useToken="true"/>
-        <nts:include value="assert.response.numResources" scope="common" 
-            resource="ServiceRequest" count="1"/>
     </test>
 
     <test id="03-retrieve-Composition">
         <name value="Scenario 2.3 - Composition"/>
         <description value="Query Composition resource with all the references by using the Document operation"/>
         <nts:include value="test.client.read" scope="common" resource="Composition"
-            params="$document?id=composition-hg-VerwijzingHuisartsParamedicusMinimaalbericht"
+            params="/composition-hg-VerwijzingHuisartsParamedicusMinimaalbericht"
             useToken="true"/>
-        <nts:include value="assert.response.numResources" scope="common" 
-            resource="Composition" count="1"/>
     </test>
 
 </TestScript>

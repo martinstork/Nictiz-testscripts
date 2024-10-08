@@ -70,7 +70,7 @@
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
-            <params value="?_id=task-hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
+            <params value="/task-hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
             <requestHeader>
                <field value="Authorization"/>
                <value value="${patient-token-id}"/>
@@ -306,7 +306,7 @@
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
-            <params value="?_id=servicerequest-hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
+            <params value="/servicerequest-hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
             <requestHeader>
                <field value="Authorization"/>
                <value value="${patient-token-id}"/>
@@ -554,7 +554,7 @@
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
-            <params value="$document?id=composition-hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
+            <params value="/composition-hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
             <requestHeader>
                <field value="Authorization"/>
                <value value="${patient-token-id}"/>

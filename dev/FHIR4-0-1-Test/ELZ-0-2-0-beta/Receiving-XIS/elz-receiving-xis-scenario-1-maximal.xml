@@ -46,23 +46,12 @@
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
-            <params value="?_id=task-hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
+            <params value="/task-hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
             <requestHeader>
                <field value="Authorization"/>
                <value value="Bearer 6wfue3a9-aab0-4417-9b3c-e6f635892fea"/>
             </requestHeader>
          </operation>
-      </action>
-      <action>
-         <assert>
-            <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
-               <valueBoolean value="false"/>
-            </extension>
-            <description value="Confirm that the response Bundle contains 1 Task resource(s). "/>
-            <direction value="response"/>
-            <expression value="Bundle.entry.where(resource.is(Task)).count() = 1"/>
-            <warningOnly value="false"/>
-         </assert>
       </action>
    </test>
    <test id="02-retrieve-ServiceRequest">
@@ -79,23 +68,12 @@
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
-            <params value="?_id=servicerequest-hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
+            <params value="/servicerequest-hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
             <requestHeader>
                <field value="Authorization"/>
                <value value="Bearer 6wfue3a9-aab0-4417-9b3c-e6f635892fea"/>
             </requestHeader>
          </operation>
-      </action>
-      <action>
-         <assert>
-            <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
-               <valueBoolean value="false"/>
-            </extension>
-            <description value="Confirm that the response Bundle contains 1 ServiceRequest resource(s). "/>
-            <direction value="response"/>
-            <expression value="Bundle.entry.where(resource.is(ServiceRequest)).count() = 1"/>
-            <warningOnly value="false"/>
-         </assert>
       </action>
    </test>
    <test id="03-retrieve-Composition">
@@ -112,23 +90,12 @@
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
-            <params value="$document?id=composition-hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
+            <params value="/composition-hg-VerwijzingHuisartsParamedicusMaximaalbericht"/>
             <requestHeader>
                <field value="Authorization"/>
                <value value="Bearer 6wfue3a9-aab0-4417-9b3c-e6f635892fea"/>
             </requestHeader>
          </operation>
-      </action>
-      <action>
-         <assert>
-            <extension url="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript-assert-stopTestOnFail">
-               <valueBoolean value="false"/>
-            </extension>
-            <description value="Confirm that the response Bundle contains 1 Composition resource(s). "/>
-            <direction value="response"/>
-            <expression value="Bundle.entry.where(resource.is(Composition)).count() = 1"/>
-            <warningOnly value="false"/>
-         </assert>
       </action>
    </test>
 </TestScript>

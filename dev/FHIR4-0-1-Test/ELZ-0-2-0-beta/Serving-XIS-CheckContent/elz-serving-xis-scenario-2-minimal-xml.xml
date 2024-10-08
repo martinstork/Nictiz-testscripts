@@ -70,7 +70,7 @@
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
-            <params value="?_id=task-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
+            <params value="/task-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
             <requestHeader>
                <field value="Authorization"/>
                <value value="${patient-token-id}"/>
@@ -188,9 +188,9 @@
                <valueBoolean value="false"/>
             </extension>
             <label value="1-2"/>
-            <description value="Contains .identifier with . and .value"/>
+            <description value="Contains .identifier with .system and .value"/>
             <direction value="response"/>
-            <expression value="Task.where(id = '${task-hg-VerwijzingHuisartsParamedicusMinimaalbericht-id}').identifier.where({$_EXPR}).exists()"/>
+            <expression value="Task.where(id = '${task-hg-VerwijzingHuisartsParamedicusMinimaalbericht-id}').identifier.where(system and value).exists()"/>
             <warningOnly value="false"/>
          </assert>
       </action>
@@ -306,7 +306,7 @@
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
-            <params value="?_id=servicerequest-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
+            <params value="/servicerequest-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
             <requestHeader>
                <field value="Authorization"/>
                <value value="${patient-token-id}"/>
@@ -542,7 +542,7 @@
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
-            <params value="$document?id=composition-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
+            <params value="/composition-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
             <requestHeader>
                <field value="Authorization"/>
                <value value="${patient-token-id}"/>
