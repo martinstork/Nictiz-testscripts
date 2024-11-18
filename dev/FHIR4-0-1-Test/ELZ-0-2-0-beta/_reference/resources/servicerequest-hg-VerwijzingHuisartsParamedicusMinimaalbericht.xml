@@ -3,6 +3,34 @@
   <meta>
     <profile value="http://nictiz.nl/fhir/StructureDefinition/hg-ReferralServiceRequest"/>
   </meta>
+  <text>
+    <status value="generated"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <table>
+        <caption>ServiceRequest. Subject: Patient, XXX_Andrioli. Id: hg-VerwijzingHuisartsParamedicusMinimaalbericht (urn:oid:2.16.840.1.113883.2.4.3.11.999.7), Categorie: <span title="Verwijsbrief (1 - 2.16.840.1.113883.2.4.4.30.69)">Verwijsbrief</span>, Status: voltooid<span style="display: block;">Intentie: aanvraag</span>
+          <span style="display: block;">Uitvoerende: Healthcare provider (organization), organisation-id 04086949 in system 2.16.840.1.113883.2.4.6.1</span>
+        </caption>
+        <tbody>
+          <tr>
+            <th>Gemaakt</th>
+            <td>${DATE}</td>
+          </tr>
+          <tr>
+            <th>Aanvrager</th>
+            <td>Healthcare professional (role)</td>
+          </tr>
+          <tr>
+            <td/>
+            <td/>
+          </tr>
+          <tr>
+            <th>Ondersteunende informatie</th>
+            <td/>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </text>
   <identifier>
     <system value="urn:oid:2.16.840.1.113883.2.4.3.11.999.7"/>
     <value value="hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>

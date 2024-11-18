@@ -5,7 +5,7 @@
       <profile value="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript"/>
    </meta>
    <url value="http://nictiz.nl/fhir/TestScript/elz-serving-xis-scenario-2-minimal-CheckContent-xml"/>
-   <version value="R4-patchlevel 2024-03"/>
+   <version value="R4-patchlevel 2024-10"/>
    <name value="ELZ - Serving XIS - Scenario 2 - Serving ELZ resources of XXX-Andrioli - target CheckContent - XML Format"/>
    <status value="active"/>
    <publisher value="Nictiz"/>
@@ -107,7 +107,7 @@
             </extension>
             <description value="Confirm that the OID of the zib valueset is not used for the system of a coding element."/>
             <direction value="response"/>
-            <expression value="Task.descendants().where($this.is(coding)).system.startsWith('urn:oid:2.16.840.1.113883.2.4.3.11.60.40.2').not()"/>
+            <expression value="Task.descendants().where($this.is(coding)).where(system.startsWith('urn:oid:2.16.840.1.113883.2.4.3.11.60.40.2')).exists().not()"/>
             <warningOnly value="false"/>
          </assert>
       </action>
@@ -343,7 +343,7 @@
             </extension>
             <description value="Confirm that the OID of the zib valueset is not used for the system of a coding element."/>
             <direction value="response"/>
-            <expression value="ServiceRequest.descendants().where($this.is(coding)).system.startsWith('urn:oid:2.16.840.1.113883.2.4.3.11.60.40.2').not()"/>
+            <expression value="ServiceRequest.descendants().where($this.is(coding)).where(system.startsWith('urn:oid:2.16.840.1.113883.2.4.3.11.60.40.2')).exists().not()"/>
             <warningOnly value="false"/>
          </assert>
       </action>
@@ -579,7 +579,7 @@
             </extension>
             <description value="Confirm that the OID of the zib valueset is not used for the system of a coding element."/>
             <direction value="response"/>
-            <expression value="Composition.descendants().where($this.is(coding)).system.startsWith('urn:oid:2.16.840.1.113883.2.4.3.11.60.40.2').not()"/>
+            <expression value="Composition.descendants().where($this.is(coding)).where(system.startsWith('urn:oid:2.16.840.1.113883.2.4.3.11.60.40.2')).exists().not()"/>
             <warningOnly value="false"/>
          </assert>
       </action>
@@ -744,9 +744,9 @@
                <valueBoolean value="false"/>
             </extension>
             <label value="1-9"/>
-            <description value="Contains .section with .title with a value, and .code with .coding with .system 'http://snomed.info/sct' and .code '406550009' and .display, and , and. This assert checks if all children exist (if applicable with their specific values) and if they are present within one element. Following asserts check if individual children exist to help you debug if this assert fails"/>
+            <description value="Contains .section with .title with a value, and .code with .coding with .system 'http://snomed.info/sct' and .code '406550009' and .display. This assert checks if all children exist (if applicable with their specific values) and if they are present within one element. Following asserts check if individual children exist to help you debug if this assert fails"/>
             <direction value="response"/>
-            <expression value="Composition.where(id = '${composition-hg-VerwijzingHuisartsParamedicusMinimaalbericht-id}').section.where(title.hasValue() and code.coding.where(system = 'http://snomed.info/sct' and code = '406550009' and display) and and ).exists()"/>
+            <expression value="Composition.where(id = '${composition-hg-VerwijzingHuisartsParamedicusMinimaalbericht-id}').section.where(title.hasValue() and code.coding.where(system = 'http://snomed.info/sct' and code = '406550009' and display).exists()).exists()"/>
             <warningOnly value="false"/>
          </assert>
       </action>

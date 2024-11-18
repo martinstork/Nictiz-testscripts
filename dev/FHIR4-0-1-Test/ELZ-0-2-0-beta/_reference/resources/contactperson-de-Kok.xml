@@ -13,7 +13,7 @@
         <a href="tel:0665555556">0665555556</a> (Tel Privé), <a href="mailto:kokkie@testemail.nl">kokkie@testemail.nl</a> (E-mail Werk)</div>
       <div>Knolweg to 1000 a II, 9999XA Stitswerd Het Hogeland, Nederland (Privé Bezoek)</div>
       <div>
-        <span title="Eerste relatie/contactpersoon (01 - RoleCodeLijst (COD472-VEKT))">Eerste relatie/contactpersoon</span>, <span title="Partner (DOMPART - http://terminology.hl7.org/CodeSystem/v3-RoleCode)">Partner</span> van Patient, Sandra Janine (Sandra) van XXX_Sanderink</div>
+        <span title="Eerste relatie/contactpersoon (01 - RoleCodeLijst (COD472-VEKT))">Eerste relatie/contactpersoon</span>, <span title="Partner (DOMPART - HL7 v3-RoleCode)">Partner</span> van Patient, Sandra Janine (Sandra) van XXX_Sanderink</div>
     </div>
   </text>
   <patient>

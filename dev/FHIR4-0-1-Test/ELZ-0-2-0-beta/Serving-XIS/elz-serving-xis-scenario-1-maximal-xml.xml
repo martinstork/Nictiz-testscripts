@@ -5,7 +5,7 @@
       <profile value="http://touchstone.aegis.net/touchstone/fhir/testing/StructureDefinition/testscript"/>
    </meta>
    <url value="http://nictiz.nl/fhir/TestScript/elz-serving-xis-scenario-1-maximal-xml"/>
-   <version value="R4-patchlevel 2024-03"/>
+   <version value="R4-patchlevel 2024-10"/>
    <name value="ELZ - Serving XIS - Scenario 1 - Serving ELZ resources of van-XXX-Sanderink-de-Kok - XML Format"/>
    <status value="active"/>
    <publisher value="Nictiz"/>
@@ -88,7 +88,7 @@
             </extension>
             <description value="Confirm that the OID of the zib valueset is not used for the system of a coding element."/>
             <direction value="response"/>
-            <expression value="Task.descendants().where($this.is(coding)).system.startsWith('urn:oid:2.16.840.1.113883.2.4.3.11.60.40.2').not()"/>
+            <expression value="Task.descendants().where($this.is(coding)).where(system.startsWith('urn:oid:2.16.840.1.113883.2.4.3.11.60.40.2')).exists().not()"/>
             <warningOnly value="false"/>
          </assert>
       </action>
@@ -177,7 +177,7 @@
             </extension>
             <description value="Confirm that the OID of the zib valueset is not used for the system of a coding element."/>
             <direction value="response"/>
-            <expression value="ServiceRequest.descendants().where($this.is(coding)).system.startsWith('urn:oid:2.16.840.1.113883.2.4.3.11.60.40.2').not()"/>
+            <expression value="ServiceRequest.descendants().where($this.is(coding)).where(system.startsWith('urn:oid:2.16.840.1.113883.2.4.3.11.60.40.2')).exists().not()"/>
             <warningOnly value="false"/>
          </assert>
       </action>
@@ -266,7 +266,7 @@
             </extension>
             <description value="Confirm that the OID of the zib valueset is not used for the system of a coding element."/>
             <direction value="response"/>
-            <expression value="Composition.descendants().where($this.is(coding)).system.startsWith('urn:oid:2.16.840.1.113883.2.4.3.11.60.40.2').not()"/>
+            <expression value="Composition.descendants().where($this.is(coding)).where(system.startsWith('urn:oid:2.16.840.1.113883.2.4.3.11.60.40.2')).exists().not()"/>
             <warningOnly value="false"/>
          </assert>
       </action>
