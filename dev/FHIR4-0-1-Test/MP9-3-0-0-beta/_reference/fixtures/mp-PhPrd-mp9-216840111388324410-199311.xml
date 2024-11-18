@@ -1,0 +1,73 @@
+<<<<<<< HEAD:dev/FHIR4-0-1-Test/MP9-3-0-0-beta/_reference/fixtures/mp-PhPrd-mp9-216840111388324410-98604.xml
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="mp-PhPrd-mp9-216840111388324410-98604"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
+  </meta>
+  <text>
+    <status value="extensions"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <table>
+        <tbody>
+          <tr>
+            <th>Code</th>
+            <td>
+              <span title="ATORVASTATINE 10MG TABLET (98604 - G-Standaard PRK)">ATORVASTATINE 10MG TABLET</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </text>
+  <code>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.2.4.4.10"/>
+      <code value="98604"/>
+      <display value="ATORVASTATINE 10MG TABLET"/>
+      <userSelected value="true"/>
+    </coding>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.2.4.4.1"/>
+      <code value="137197"/>
+      <display value="ATORVASTATINE 10MG TABLET"/>
+    </coding>
+    <text value="ATORVASTATINE 10MG TABLET"/>
+  </code>
+</Medication>
+=======
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="mp-PhPrd-mp9-216840111388324410-199311"/>
+  <meta>
+    <profile value="http://nictiz.nl/fhir/StructureDefinition/mp-PharmaceuticalProduct"/>
+  </meta>
+  <text>
+    <status value="extensions"/>
+    <div xmlns="http://www.w3.org/1999/xhtml">
+      <table>
+        <tbody>
+          <tr>
+            <th>Code</th>
+            <td>
+              <span title="MODAFINIL TABLET 200MG (199311 - G-Standaard PRK)">MODAFINIL TABLET 200MG</span>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </text>
+  <code>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.2.4.4.10"/>
+      <code value="199311"/>
+      <display value="MODAFINIL TABLET 200MG"/>
+      <userSelected value="true"/>
+    </coding>
+    <coding>
+      <system value="urn:oid:2.16.840.1.113883.2.4.4.1"/>
+      <code value="179051"/>
+      <display value="MODAFINIL TABLET 200MG"/>
+    </coding>
+    <text value="MODAFINIL TABLET 200MG"/>
+  </code>
+</Medication>
+>>>>>>> main:dev/FHIR4-0-1-Test/MP9-3-0-0-beta/_reference/fixtures/mp-PhPrd-mp9-216840111388324410-199311.xml
