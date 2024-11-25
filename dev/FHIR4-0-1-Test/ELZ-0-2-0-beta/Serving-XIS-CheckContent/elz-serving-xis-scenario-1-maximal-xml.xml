@@ -38,6 +38,12 @@
       <description value="OAuth Token for current patient"/>
    </variable>
    <variable>
+      <name value="composition-hg-VerwijzingHuisartsParamedicusMaximaalbericht-id"/>
+      <description value="Resource.id for Composition 1"/>
+      <expression value="Composition.id"/>
+      <sourceId value="fixture-03-serve-Composition"/>
+   </variable>
+   <variable>
       <name value="task-hg-VerwijzingHuisartsParamedicusMaximaalbericht-id"/>
       <description value="Resource.id for Task 1"/>
       <expression value="Task.id"/>
@@ -48,12 +54,6 @@
       <description value="Resource.id for ServiceRequest 1"/>
       <expression value="ServiceRequest.id"/>
       <sourceId value="fixture-02-serve-ServiceRequest"/>
-   </variable>
-   <variable>
-      <name value="composition-hg-VerwijzingHuisartsParamedicusMaximaalbericht-id"/>
-      <description value="Resource.id for Composition 1"/>
-      <expression value="Composition.id"/>
-      <sourceId value="fixture-03-serve-Composition"/>
    </variable>
    <test id="01-serve-Task">
       <name value="Scenario 1.1 - Task"/>

@@ -38,6 +38,12 @@
       <description value="OAuth Token for current patient"/>
    </variable>
    <variable>
+      <name value="composition-hg-VerwijzingHuisartsParamedicusMinimaalbericht-id"/>
+      <description value="Resource.id for Composition 1"/>
+      <expression value="Composition.id"/>
+      <sourceId value="fixture-03-serve-Composition"/>
+   </variable>
+   <variable>
       <name value="task-hg-VerwijzingHuisartsParamedicusMinimaalbericht-id"/>
       <description value="Resource.id for Task 1"/>
       <expression value="Task.id"/>
@@ -48,12 +54,6 @@
       <description value="Resource.id for ServiceRequest 1"/>
       <expression value="ServiceRequest.id"/>
       <sourceId value="fixture-02-serve-ServiceRequest"/>
-   </variable>
-   <variable>
-      <name value="composition-hg-VerwijzingHuisartsParamedicusMinimaalbericht-id"/>
-      <description value="Resource.id for Composition 1"/>
-      <expression value="Composition.id"/>
-      <sourceId value="fixture-03-serve-Composition"/>
    </variable>
    <test id="01-serve-Task">
       <name value="Scenario 2.1 - Task"/>
@@ -746,7 +746,7 @@
             <label value="1-9"/>
             <description value="Contains .section with .title with a value, and .code with .coding with .system 'http://snomed.info/sct' and .code '406550009' and .display. This assert checks if all children exist (if applicable with their specific values) and if they are present within one element. Following asserts check if individual children exist to help you debug if this assert fails"/>
             <direction value="response"/>
-            <expression value="Composition.where(id = '${composition-hg-VerwijzingHuisartsParamedicusMinimaalbericht-id}').section.where(title.hasValue() and code.coding.where(system = 'http://snomed.info/sct' and code = '406550009' and display).exists()).exists()"/>          
+            <expression value="Composition.where(id = '${composition-hg-VerwijzingHuisartsParamedicusMinimaalbericht-id}').section.where(title.hasValue() and code.coding.where(system = 'http://snomed.info/sct' and code = '406550009' and display).exists()).exists()"/>
             <warningOnly value="false"/>
          </assert>
       </action>
