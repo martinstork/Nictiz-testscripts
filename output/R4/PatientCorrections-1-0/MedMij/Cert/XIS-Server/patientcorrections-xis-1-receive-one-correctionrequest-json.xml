@@ -273,7 +273,7 @@
          <assert>
             <description value="Confirm that that the OperationOutcome contains the actual message of the acknowledgement of receipt."/>
             <direction value="response"/>
-            <expression value="entry.where(resource as OperationOutcome).resource.issue.details.text.exists()"/>
+            <expression value="Bundle.entry.where(resource as OperationOutcome).resource.issue.details.text.exists()"/>
             <stopTestOnFail value="false"/>
             <warningOnly value="false"/>
          </assert>
