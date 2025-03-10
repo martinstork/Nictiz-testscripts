@@ -15,37 +15,53 @@
         <sourceId value="fixture-03-serve-Composition"/>
     </variable>
 
+    <variable>
+        <name value="TaskID"/>
+        <description value="...TODO..."/>
+    </variable>
+
+    <variable>
+        <name value="{$taskFixtureId}-servicerequest-{$sliceCode}-id"/>
+        <expression value="Task.input.where(type.coding.system = '{$sliceSystem}' and type.coding.code = '{$sliceCode}').value.reference.replace('Servicerequest/', '')"/>
+        <sourceId value="{$taskFixtureId}"/>
+    </variable>
+
+    <variable>
+        <name value="{$servicerequestFixtureId}-composition-{$sliceCode}-id"/>
+        <expression value="Servicerequest.input.where(type.coding.system = '{$sliceSystem}' and type.coding.code = '{$sliceCode}').value.reference.replace('Composition/', '')"/>
+        <sourceId value="{$servicerequestFixtureId}"/>
+    </variable>
+
+
     <test id="01-serve-Task">
         <name value="Scenario 1.1 - Task"/>
         <description
             value="Serve Task resource"/>
         <nts:include value="test.server.successfulRead" scope="common"
             resource="Task"
-            params="/task-hg-VerwijzingHuisartsParamedicusMaximaalbericht"
+            params="/{TaskID}"
             useToken="true"/>
         
         <nts:contentAsserts href="resources/task-hg-VerwijzingHuisartsParamedicusMaximaalbericht.xml" 
             description="contains .code.coding.code = '3457005'" discriminator="code.where(coding.where(code = '3457005'))" nts:in-targets="CheckContent"/>
-        
     </test>
 
     <test id="02-serve-ServiceRequest">
         <name value="Scenario 1.2 - ServiceRequest"/>
         <description value="Serve ServiceRequest resource"/>
         <nts:include value="test.server.successfulRead" scope="common" resource="ServiceRequest"
-            params="/servicerequest-hg-VerwijzingHuisartsParamedicusMaximaalbericht"
+            params="{$taskFixtureId}-servicerequest-{$sliceCode}-id"
             useToken="true"/>
 
         <nts:contentAsserts href="resources/servicerequest-hg-VerwijzingHuisartsParamedicusMaximaalbericht.xml"
             description="contains .category.coding.code = '1'" discriminator="category.where(coding.where(code = '1'))" nts:in-targets="CheckContent"/>
-        
     </test>
 
     <test id="03-serve-Composition">
         <name value="Scenario 1.3 - Composition"/>
         <description value="Serve Composition resource with all the references by using the Document operation"/>
         <nts:include value="test.server.successfulRead" scope="common" resource="Composition"
-            params="/composition-hg-VerwijzingHuisartsParamedicusMaximaalbericht"
+            params="/{$servicerequestFixtureId}-composition-{$sliceCode}-id"
             useToken="true"/>
    </test>
     
