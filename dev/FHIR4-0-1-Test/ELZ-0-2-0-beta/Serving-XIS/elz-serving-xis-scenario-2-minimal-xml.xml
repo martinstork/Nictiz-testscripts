@@ -37,6 +37,18 @@
       <defaultValue value="Bearer 9we86dg8-aab0-4417-9b3c-e6f635892fea"/>
       <description value="OAuth Token for current patient"/>
    </variable>
+   <variable>
+      <name value="taskid"/>
+      <description value="The resource id of the Task"/>
+   </variable>
+   <variable>
+      <name value="servicerequestid"/>
+      <description value="The resource id of the Servicerequest"/>
+   </variable>
+   <variable>
+      <name value="compositionid"/>
+      <description value="The resource id of the Composition"/>
+   </variable>
    <test id="01-serve-Task">
       <name value="Scenario 2.1 - Task"/>
       <description value="Serve Task resource"/>
@@ -52,7 +64,7 @@
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
-            <params value="/task-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
+            <params value="/${taskid}"/>
             <requestHeader>
                <field value="Authorization"/>
                <value value="${patient-token-id}"/>
@@ -141,7 +153,7 @@
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
-            <params value="/servicerequest-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
+            <params value="/${servicerequestid}"/>
             <requestHeader>
                <field value="Authorization"/>
                <value value="${patient-token-id}"/>
@@ -230,7 +242,7 @@
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
-            <params value="/composition-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
+            <params value="/${compositionid}"/>
             <requestHeader>
                <field value="Authorization"/>
                <value value="${patient-token-id}"/>

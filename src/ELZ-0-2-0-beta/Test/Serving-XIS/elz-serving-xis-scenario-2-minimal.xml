@@ -14,6 +14,24 @@
         <expression value="Composition.id"/>
         <sourceId value="fixture-03-serve-Composition"/>
     </variable>
+    
+    <nts:component>         
+        <variable>
+            <name value="taskid"/>
+            <description value="The resource id of the Task"/>
+        </variable>
+        
+        <variable>
+            <name value="servicerequestid"/>
+            <description value="The resource id of the Servicerequest"/>
+        </variable>
+        
+        
+        <variable>
+            <name value="compositionid"/>
+            <description value="The resource id of the Composition"/>
+        </variable>    
+    </nts:component>
 
     <test id="01-serve-Task">
         <name value="Scenario 2.1 - Task"/>
@@ -21,7 +39,7 @@
             value="Serve Task resource"/>
         <nts:include value="test.server.successfulRead" scope="common"
             resource="Task"
-            params="/task-hg-VerwijzingHuisartsParamedicusMinimaalbericht"
+            params="/${taskid}"
             useToken="true"/>
         
         <nts:contentAsserts href="resources/task-hg-VerwijzingHuisartsParamedicusMinimaalbericht.xml"
@@ -32,8 +50,9 @@
     <test id="02-serve-ServiceRequest">
         <name value="Scenario 2.2 - ServiceRequest"/>
         <description value="Serve ServiceRequest resource"/>
-        <nts:include value="test.server.successfulRead" scope="common" resource="ServiceRequest"
-            params="/servicerequest-hg-VerwijzingHuisartsParamedicusMinimaalbericht"
+        <nts:include value="test.server.successfulRead" scope="common" 
+            resource="ServiceRequest"
+            params="/${servicerequestid}"
             useToken="true"/>
         
         <nts:contentAsserts href="resources/servicerequest-hg-VerwijzingHuisartsParamedicusMinimaalbericht.xml"
@@ -44,10 +63,10 @@
     <test id="03-serve-Composition">
         <name value="Scenario 2.3 - Composition"/>
         <description value="Serve Composition resource with all the references by using the Document operation"/>
-        <nts:include value="test.server.successfulRead" scope="common" resource="Composition"
-            params="/composition-hg-VerwijzingHuisartsParamedicusMinimaalbericht"
-            useToken="true"/>
-        
+        <nts:include value="test.server.successfulRead" scope="common" 
+            resource="Composition"
+            params="/${compositionid}"
+            useToken="true"/>   
     </test>
 
 

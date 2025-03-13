@@ -44,6 +44,18 @@
       <sourceId value="fixture-03-serve-Composition"/>
    </variable>
    <variable>
+      <name value="taskid"/>
+      <description value="The resource id of the Task"/>
+   </variable>
+   <variable>
+      <name value="servicerequestid"/>
+      <description value="The resource id of the Servicerequest"/>
+   </variable>
+   <variable>
+      <name value="compositionid"/>
+      <description value="The resource id of the Composition"/>
+   </variable>
+   <variable>
       <name value="task-hg-VerwijzingHuisartsParamedicusMinimaalbericht-id"/>
       <description value="Resource.id for Task 1"/>
       <expression value="Task.id"/>
@@ -70,7 +82,7 @@
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
-            <params value="/task-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
+            <params value="/${taskid}"/>
             <requestHeader>
                <field value="Authorization"/>
                <value value="${patient-token-id}"/>
@@ -306,7 +318,7 @@
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
-            <params value="/servicerequest-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
+            <params value="/${servicerequestid}"/>
             <requestHeader>
                <field value="Authorization"/>
                <value value="${patient-token-id}"/>
@@ -542,7 +554,7 @@
             <destination value="1"/>
             <encodeRequestUrl value="true"/>
             <origin value="1"/>
-            <params value="/composition-hg-VerwijzingHuisartsParamedicusMinimaalbericht"/>
+            <params value="/${compositionid}"/>
             <requestHeader>
                <field value="Authorization"/>
                <value value="${patient-token-id}"/>
