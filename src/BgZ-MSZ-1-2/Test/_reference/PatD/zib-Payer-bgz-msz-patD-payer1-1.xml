@@ -7,7 +7,7 @@
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <table>
-            <caption>Verzekering/garantstelling. </caption>
+            <caption>Verzekering/garantstelling. Id: bgz-msz-patD-payer (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6)</caption>
             <tbody>
                <tr>
                   <th>Type</th>
@@ -20,8 +20,8 @@
                   <td>${DATE, T, D, -182} - ${DATE, T, D, +183}</td>
                </tr>
                <tr>
-                  <th>abonnee</th>
-                  <td>Hannelore H.W. Hannie Wensveen Çelik</td>
+                  <th>verzekerde</th>
+                  <td>Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik</td>
                </tr>
                <tr>
                   <th>Verzekerdenummer</th>
@@ -33,12 +33,16 @@
                </tr>
                <tr>
                   <th>begunstigde</th>
-                  <td>Hannelore H.W. Hannie Wensveen Çelik</td>
+                  <td>Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik</td>
                </tr>
             </tbody>
          </table>
       </div>
    </text>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6"/>
+      <value value="bgz-msz-patD-payer"/>
+   </identifier>
    <type>
       <coding>
          <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.1"/>
@@ -47,13 +51,13 @@
       </coding>
    </type>
    <subscriber>
-      <reference value="Patient/HANNELORE-H-W--HANNIE-WENSVEEN-ELIK"/>
-      <display value="Hannelore H.W. Hannie Wensveen Çelik"/>
+      <reference value="Patient/FATIMA-SAIDA-F-S-K--FATIMA-AL-KSAR-EL-KEBIR-ELIK"/>
+      <display value="Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik"/>
    </subscriber>
    <subscriberId value="99990003"/>
    <beneficiary>
-      <reference value="Patient/HANNELORE-H-W--HANNIE-WENSVEEN-ELIK"/>
-      <display value="Hannelore H.W. Hannie Wensveen Çelik"/>
+      <reference value="Patient/FATIMA-SAIDA-F-S-K--FATIMA-AL-KSAR-EL-KEBIR-ELIK"/>
+      <display value="Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik"/>
    </beneficiary>
    <period>
       <start value="${DATE, T, D, -182}"/>

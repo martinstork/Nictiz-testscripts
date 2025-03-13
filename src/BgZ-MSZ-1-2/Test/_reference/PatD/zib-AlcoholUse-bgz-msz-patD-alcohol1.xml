@@ -7,7 +7,7 @@
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <table>
-            <caption>Observatie/bepaling. Subject: Hannelore H.W. Hannie Wensveen Çelik. Status: definitief</caption>
+            <caption>Observatie/bepaling. Subject: Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik. Id: bgz-msz-patD-alcoholuse (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Status: definitief</caption>
             <tfoot>
                <tr>
                   <td colspan="2">Alleen tijdens puberteit.</td>
@@ -16,7 +16,7 @@
             <tbody>
                <tr>
                   <th>Bepalingdatum/tijd</th>
-                  <td>2 maart 2001 - 2 maart 2002</td>
+                  <td>3 juli 1990 - 3 augustus 1991</td>
                </tr>
                <tr>
                   <th>Code</th>
@@ -34,12 +34,16 @@
                   <td>
                      <span title="inname van alcohol (160573003 - SNOMED CT)">inname van alcohol</span>
                   </td>
-                  <td>2 {glas}/w</td>
+                  <td>2 {glas}/wk</td>
                </tr>
             </tbody>
          </table>
       </div>
    </text>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6"/>
+      <value value="bgz-msz-patD-alcoholuse"/>
+   </identifier>
    <status value="final"/>
    <code>
       <coding>
@@ -49,12 +53,12 @@
       </coding>
    </code>
    <subject>
-      <reference value="Patient/HANNELORE-H-W--HANNIE-WENSVEEN-ELIK"/>
-      <display value="Hannelore H.W. Hannie Wensveen Çelik"/>
+      <reference value="Patient/FATIMA-SAIDA-F-S-K--FATIMA-AL-KSAR-EL-KEBIR-ELIK"/>
+      <display value="Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik"/>
    </subject>
    <effectivePeriod>
-      <start value="2001-03-02"/>
-      <end value="2002-03-02"/>
+      <start value="1990-07-03"/>
+      <end value="1991-08-03"/>
    </effectivePeriod>
    <valueCodeableConcept>
       <coding>
@@ -74,9 +78,9 @@
       </code>
       <valueQuantity>
          <value value="2"/>
-         <unit value="{glas}/w"/>
+         <unit value="{glas}/wk"/>
          <system value="http://unitsofmeasure.org"/>
-         <code value="{{glas}/w}"/>
+         <code value="{glas}/wk"/>
       </valueQuantity>
    </component>
 </Observation>

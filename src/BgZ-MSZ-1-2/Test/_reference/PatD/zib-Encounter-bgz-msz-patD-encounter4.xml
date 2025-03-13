@@ -7,7 +7,7 @@
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <table>
-            <caption>Contact. Subject: Hannelore H.W. Hannie Wensveen Çelik. Status: voltooid</caption>
+            <caption>Contact. Subject: Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik. Id: bgz-msz-patD-encounter4 (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Status: voltooid</caption>
             <tbody>
                <tr>
                   <th>Type contact</th>
@@ -19,7 +19,7 @@
                </tr>
                <tr>
                   <th>Periode</th>
-                  <td>1 mei 2000</td>
+                  <td>1 september 1989</td>
                </tr>
                <tr>
                   <th>Reden</th>
@@ -29,6 +29,10 @@
          </table>
       </div>
    </text>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6"/>
+      <value value="bgz-msz-patD-encounter4"/>
+   </identifier>
    <status value="finished"/>
    <class>
       <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
@@ -45,12 +49,12 @@
       <display value="Inpatient"/>
    </class>
    <subject>
-      <reference value="Patient/HANNELORE-H-W--HANNIE-WENSVEEN-ELIK"/>
-      <display value="Hannelore H.W. Hannie Wensveen Çelik"/>
+      <reference value="Patient/FATIMA-SAIDA-F-S-K--FATIMA-AL-KSAR-EL-KEBIR-ELIK"/>
+      <display value="Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik"/>
    </subject>
    <period>
-      <start value="2000-05-01"/>
-      <end value="2000-05-01"/>
+      <start value="1989-09-01"/>
+      <end value="1989-09-01"/>
    </period>
    <reason>
       <text value="Ferritine 11 µg/L: minder dan 15 µg/L."/>

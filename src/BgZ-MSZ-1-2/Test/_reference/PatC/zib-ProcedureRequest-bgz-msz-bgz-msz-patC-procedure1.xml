@@ -7,7 +7,7 @@
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <table>
-            <caption>Verrichtingaanvraag. Subject: Huinink. Id: bgz-msz-patC-procedure1 (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Status: onbekend<span style="display: block;">Intentie: plan</span>
+            <caption>Verrichtingaanvraag. Subject: de Boer. Id: bgz-msz-patC-procedure1 (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Status: onbekend<span style="display: block;">Intentie: plan</span>
             </caption>
             <tbody>
                <tr>
@@ -38,7 +38,7 @@
       </coding>
    </code>
    <subject>
-      <reference value="Patient/HUININK"/>
-      <display value="Huinink"/>
+      <reference value="Patient/DE-BOER"/>
+      <display value="de Boer"/>
    </subject>
 </ProcedureRequest>

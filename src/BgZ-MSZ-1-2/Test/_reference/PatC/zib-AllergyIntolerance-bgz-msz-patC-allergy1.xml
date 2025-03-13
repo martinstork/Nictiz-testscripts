@@ -7,7 +7,7 @@
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <table>
-            <caption>Allergie/intolerantie. Patiënt: Huinink. Status: bevestigd</caption>
+            <caption>Allergie/intolerantie. Patiënt: de Boer. Id: bgz-msz-patC-allergy1 (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Status: actief / bevestigd</caption>
             <tbody>
                <tr>
                   <th>Code</th>
@@ -19,13 +19,17 @@
          </table>
       </div>
    </text>
-   <clinicalStatus value="resolved">
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6"/>
+      <value value="bgz-msz-patC-allergy1"/>
+   </identifier>
+   <clinicalStatus value="active">
       <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
          <valueCodeableConcept>
             <coding>
                <system value="http://hl7.org/fhir/v3/ActStatus"/>
-               <code value="completed"/>
-               <display value="Completed"/>
+               <code value="active"/>
+               <display value="Active"/>
             </coding>
          </valueCodeableConcept>
       </extension>
@@ -39,7 +43,7 @@
       </coding>
    </code>
    <patient>
-      <reference value="Patient/HUININK"/>
-      <display value="Huinink"/>
+      <reference value="Patient/DE-BOER"/>
+      <display value="de Boer"/>
    </patient>
 </AllergyIntolerance>

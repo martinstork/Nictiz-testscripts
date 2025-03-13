@@ -7,7 +7,7 @@
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <table>
-            <caption>Contact. Subject: Hannelore H.W. Hannie Wensveen Çelik. Status: voltooid</caption>
+            <caption>Contact. Subject: Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik. Id: bgz-msz-patD-encounter3 (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Status: voltooid</caption>
             <tbody>
                <tr>
                   <th>Type contact</th>
@@ -19,7 +19,7 @@
                </tr>
                <tr>
                   <th>Periode</th>
-                  <td>12 juli 1999 - 17 juli 1999</td>
+                  <td>11 november 1988 - 16 november 1988</td>
                </tr>
                <tr>
                   <th>Probleem/Verrichting</th>
@@ -49,6 +49,10 @@
          </table>
       </div>
    </text>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6"/>
+      <value value="bgz-msz-patD-encounter3"/>
+   </identifier>
    <status value="finished"/>
    <class>
       <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
@@ -65,8 +69,8 @@
       <display value="Inpatient"/>
    </class>
    <subject>
-      <reference value="Patient/HANNELORE-H-W--HANNIE-WENSVEEN-ELIK"/>
-      <display value="Hannelore H.W. Hannie Wensveen Çelik"/>
+      <reference value="Patient/FATIMA-SAIDA-F-S-K--FATIMA-AL-KSAR-EL-KEBIR-ELIK"/>
+      <display value="Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik"/>
    </subject>
    <participant>
       <type>
@@ -100,8 +104,8 @@
       </individual>
    </participant>
    <period>
-      <start value="1999-07-12"/>
-      <end value="1999-07-17"/>
+      <start value="1988-11-11"/>
+      <end value="1988-11-16"/>
    </period>
    <diagnosis>
       <condition>

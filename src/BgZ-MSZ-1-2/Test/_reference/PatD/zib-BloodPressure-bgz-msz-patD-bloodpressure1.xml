@@ -7,7 +7,7 @@
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <table>
-            <caption>Observatie/bepaling. Subject: Hannelore H.W. Hannie Wensveen Çelik. Categorie: <span title="Vital Signs (vital-signs - observation-category)">Vital Signs</span>, Status: definitief</caption>
+            <caption>Observatie/bepaling. Subject: Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik. Id: bgz-msz-patD-bloodpressure (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Categorie: <span title="Vital Signs (vital-signs - observation-category)">Vital Signs</span>, Status: definitief</caption>
             <tfoot>
                <tr>
                   <td colspan="2">Patiënt was zenuwachtig.</td>
@@ -16,12 +16,12 @@
             <tbody>
                <tr>
                   <th>Bepalingdatum/tijd</th>
-                  <td>${DATE, T, D, -10}T10:30:00+02:00</td>
+                  <td>10:30:00, 22 juni 2008</td>
                </tr>
                <tr>
                   <th>Methode</th>
                   <td>
-                     <span title="Invasive (10179008 - SNOMED CT)">Invasive</span>
+                     <span title="Non-invasive (22762002 - SNOMED CT)">Non-invasive</span>
                   </td>
                </tr>
                <tr>
@@ -66,6 +66,30 @@
                </tr>
                <tr>
                   <td>
+                     <span title="Korotkofftonen (85549003 - SNOMED CT)">Korotkofftonen</span>
+                  </td>
+                  <td>
+                     <span title="Phase 4 (255271000 - SNOMED CT)">Phase 4</span>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <span title="Blood pressure device Cuff size (8358-4 - LOINC)">Blood pressure device Cuff size</span>
+                  </td>
+                  <td>
+                     <span title="Standaard (STD - 2.16.840.1.113883.2.4.3.11.60.40.4.15.1)">Standaard</span>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
+                     <span title="bloeddrukmanchet (70665002 - SNOMED CT)">bloeddrukmanchet</span>
+                  </td>
+                  <td>
+                     <span title="Standaard (STD - 2.16.840.1.113883.2.4.3.11.60.40.4.15.1)">Standaard</span>
+                  </td>
+               </tr>
+               <tr>
+                  <td>
                      <span title="lichaamspositie voor bepalen van bloeddruk (424724000 - SNOMED CT)">lichaamspositie voor bepalen van bloeddruk</span>
                   </td>
                   <td>
@@ -84,6 +108,10 @@
          </table>
       </div>
    </text>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6"/>
+      <value value="bgz-msz-patD-bloodpressure"/>
+   </identifier>
    <status value="final"/>
    <category>
       <coding>
@@ -100,10 +128,10 @@
       </coding>
    </code>
    <subject>
-      <reference value="Patient/HANNELORE-H-W--HANNIE-WENSVEEN-ELIK"/>
-      <display value="Hannelore H.W. Hannie Wensveen Çelik"/>
+      <reference value="Patient/FATIMA-SAIDA-F-S-K--FATIMA-AL-KSAR-EL-KEBIR-ELIK"/>
+      <display value="Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik"/>
    </subject>
-   <effectiveDateTime value="${DATE, T, D, -10}T10:30:00+02:00"/>
+   <effectiveDateTime value="2008-06-22T10:30:00+02:00"/>
    <comment value="Patiënt was zenuwachtig."/>
    <bodySite>
       <coding>
@@ -115,8 +143,8 @@
    <method>
       <coding>
          <system value="http://snomed.info/sct"/>
-         <code value="10179008"/>
-         <display value="Invasive"/>
+         <code value="22762002"/>
+         <display value="Non-invasive"/>
       </coding>
    </method>
    <component>
@@ -178,6 +206,54 @@
          <system value="http://unitsofmeasure.org"/>
          <code value="mm[Hg]"/>
       </valueQuantity>
+   </component>
+   <component>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="85549003"/>
+            <display value="Korotkofftonen"/>
+         </coding>
+      </code>
+      <valueCodeableConcept>
+         <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="255271000"/>
+            <display value="Phase 4"/>
+         </coding>
+      </valueCodeableConcept>
+   </component>
+   <component>
+      <code>
+         <coding>
+            <system value="http://loinc.org"/>
+            <code value="8358-4"/>
+            <display value="Blood pressure device Cuff size"/>
+         </coding>
+      </code>
+      <valueCodeableConcept>
+         <coding>
+            <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1"/>
+            <code value="STD"/>
+            <display value="Standaard"/>
+         </coding>
+      </valueCodeableConcept>
+   </component>
+   <component>
+      <code>
+         <coding>
+            <system value="http://snomed.info/sct"/>
+            <code value="70665002"/>
+            <display value="bloeddrukmanchet"/>
+         </coding>
+      </code>
+      <valueCodeableConcept>
+         <coding>
+            <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.15.1"/>
+            <code value="STD"/>
+            <display value="Standaard"/>
+         </coding>
+      </valueCodeableConcept>
    </component>
    <component>
       <code>

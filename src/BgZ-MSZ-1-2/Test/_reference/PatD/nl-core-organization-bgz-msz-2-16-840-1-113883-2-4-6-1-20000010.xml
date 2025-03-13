@@ -7,7 +7,7 @@
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <table>
-            <caption>Organisatie. Id: 20000010 (AGB-Z)</caption>
+            <caption>Organisatie. Id: bgz-msz-patD-HealthcareProv2 (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), 20000010 (AGB-Z)</caption>
             <tbody>
                <tr>
                   <th>Naam</th>
@@ -29,12 +29,16 @@
                </tr>
                <tr>
                   <th>Adres</th>
-                  <td>Transfusieplein 9900, 9999ZZ de Eed</td>
+                  <td>Transfusieplein 9900, 9999ZZ de Eed (WP)</td>
                </tr>
             </tbody>
          </table>
       </div>
    </text>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6"/>
+      <value value="bgz-msz-patD-HealthcareProv2"/>
+   </identifier>
    <identifier>
       <system value="http://fhir.nl/fhir/NamingSystem/agb-z"/>
       <value value="20000010"/>
@@ -90,6 +94,16 @@
       <use value="work"/>
    </telecom>
    <address>
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType">
+         <valueCodeableConcept>
+            <coding>
+               <system value="http://hl7.org/fhir/v3/AddressUse"/>
+               <code value="WP"/>
+               <display value="Werkadres"/>
+            </coding>
+         </valueCodeableConcept>
+      </extension>
+      <use value="work"/>
       <line value="Transfusieplein 9900">
          <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
             <valueString value="Transfusieplein"/>

@@ -7,7 +7,7 @@
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <table>
-            <caption>Vaccinatie. Patiënt: Hannelore H.W. Hannie Wensveen Çelik. Status: voltooid</caption>
+            <caption>Vaccinatie. Patiënt: Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik. Id: bgz-msz-patD-vaccin2 (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Status: voltooid</caption>
             <tfoot>
                <tr>
                   <td colspan="2">Fractuur en open wond ten gevolge van val. Tetanusvaccinatie was verlopen.</td>
@@ -19,12 +19,12 @@
                      <span title="Tetanusimmunoglobuline (J06BB02 - http://www.whocc.no/atc)">Tetanusimmunoglobuline</span>
                   </th>
                   <td>
-                     <div>Toegediend: ja (${DATE, T, D, -10})</div>
+                     <div>Toegediend: ja (22 juni 2008)</div>
                      <div>Gemeld door uitvoerende: nee</div>
                   </td>
                </tr>
                <tr>
-                  <th>Vaccine Details</th>
+                  <th>Vaccinatiedetails</th>
                   <td>
                      <div>Dosering: 1.0 mL</div>
                   </td>
@@ -33,6 +33,10 @@
          </table>
       </div>
    </text>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6"/>
+      <value value="bgz-msz-patD-vaccin2"/>
+   </identifier>
    <status value="completed"/>
    <notGiven value="false"/>
    <vaccineCode>
@@ -43,10 +47,10 @@
       </coding>
    </vaccineCode>
    <patient>
-      <reference value="Patient/HANNELORE-H-W--HANNIE-WENSVEEN-ELIK"/>
-      <display value="Hannelore H.W. Hannie Wensveen Çelik"/>
+      <reference value="Patient/FATIMA-SAIDA-F-S-K--FATIMA-AL-KSAR-EL-KEBIR-ELIK"/>
+      <display value="Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik"/>
    </patient>
-   <date value="${DATE, T, D, -10}"/>
+   <date value="2008-06-22"/>
    <primarySource value="false"/>
    <doseQuantity>
       <value value="1.0"/>

@@ -6,17 +6,21 @@
    <text>
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
-         <div>Id 10000010 (UZI-NR-PERS), <span title="Naamsamenstelling: Partnernaam gevolgd door eigennaam">Hip Plato Orpheus H.P.O van Kos-Crates</span>
+         <div>Id 10000010 (UZI-NR-PERS), Id bgz-msz-patD-healthProf2 (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), <span title="Naamsamenstelling: Partnernaam gevolgd door eigennaam">Hip Plato Orpheus H.P.O van Kos-Crates</span>
          </div>
          <div>
             <a href="tel:021-9990103">021-9990103</a> (Vast telefoonnummer Werk), <a href="mailto:test02@infuusTest2.nl">test02@infuusTest2.nl</a> (E-mail Werk), <a href="tel:021-9990107">021-9990107</a> (Vast telefoonnummer Werk), <a href="tel:021-9990108">021-9990108</a> (Vast telefoonnummer Werk), <a href="tel:06-99990101">06-99990101</a> (Mobiel Werk)</div>
-         <div>Therapieplein 9991, 9999ZZ de Eed<br/>Transfusieplein 9900, 9999ZZ de Eed<br/>
+         <div>Therapieplein 9991, 9999ZZ de Eed (WP)<br/>Transfusieplein 9900, 9999ZZ de Eed (WP)<br/>
          </div>
       </div>
    </text>
    <identifier>
       <system value="http://fhir.nl/fhir/NamingSystem/uzi-nr-pers"/>
       <value value="10000010"/>
+   </identifier>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6"/>
+      <value value="bgz-msz-patD-healthProf2"/>
    </identifier>
    <name>
       <extension url="http://hl7.org/fhir/StructureDefinition/humanname-assembly-order">
@@ -106,6 +110,16 @@
       <use value="work"/>
    </telecom>
    <address>
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType">
+         <valueCodeableConcept>
+            <coding>
+               <system value="http://hl7.org/fhir/v3/AddressUse"/>
+               <code value="WP"/>
+               <display value="Werkadres"/>
+            </coding>
+         </valueCodeableConcept>
+      </extension>
+      <use value="work"/>
       <line value="Therapieplein 9991">
          <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
             <valueString value="Therapieplein"/>
@@ -118,6 +132,16 @@
       <postalCode value="9999ZZ"/>
    </address>
    <address>
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/zib-AddressInformation-AddressType">
+         <valueCodeableConcept>
+            <coding>
+               <system value="http://hl7.org/fhir/v3/AddressUse"/>
+               <code value="WP"/>
+               <display value="Werkadres"/>
+            </coding>
+         </valueCodeableConcept>
+      </extension>
+      <use value="work"/>
       <line value="Transfusieplein 9900">
          <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
             <valueString value="Transfusieplein"/>

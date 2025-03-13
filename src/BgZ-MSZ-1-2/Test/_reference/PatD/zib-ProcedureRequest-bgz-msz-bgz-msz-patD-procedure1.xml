@@ -7,7 +7,7 @@
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <table>
-            <caption>Verrichtingaanvraag. Subject: Hannelore H.W. Hannie Wensveen Çelik. Id: bgz-msz-patD-procedure1 (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Status: onbekend<span style="display: block;">Intentie: plan</span>
+            <caption>Verrichtingaanvraag. Subject: Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik. Id: bgz-msz-patD-procedure1 (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Status: onbekend<span style="display: block;">Intentie: plan</span>
             </caption>
             <tbody>
                <tr>
@@ -15,7 +15,7 @@
                      <span title="operatief herstel van tetralogie van Fallot (174814003 - SNOMED CT)">operatief herstel van tetralogie van Fallot</span>
                   </td>
                   <td>
-                     <div>Wanneer: 17 september 1986 - 18 september 1986</div>
+                     <div>Wanneer: 18 januari 1976 - 19 januari 1976</div>
                   </td>
                </tr>
                <tr>
@@ -54,12 +54,12 @@
       </coding>
    </code>
    <subject>
-      <reference value="Patient/HANNELORE-H-W--HANNIE-WENSVEEN-ELIK"/>
-      <display value="Hannelore H.W. Hannie Wensveen Çelik"/>
+      <reference value="Patient/FATIMA-SAIDA-F-S-K--FATIMA-AL-KSAR-EL-KEBIR-ELIK"/>
+      <display value="Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik"/>
    </subject>
    <occurrencePeriod>
-      <start value="1986-09-17"/>
-      <end value="1986-09-18"/>
+      <start value="1976-01-18"/>
+      <end value="1976-01-19"/>
    </occurrencePeriod>
    <performerType>
       <coding>

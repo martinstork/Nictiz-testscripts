@@ -7,7 +7,7 @@
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <table>
-            <caption>Allergie/intolerantie. Patiënt: Hannelore H.W. Hannie Wensveen Çelik. Categorie: <span title="neiging tot ongewenste reactie op voedsel (418471000 - SNOMED CT)">neiging tot ongewenste reactie op voedsel</span>, Status: opgelost / bevestigd</caption>
+            <caption>Allergie/intolerantie. Patiënt: Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik. Id: bgz-msz-patD-allergy1 (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Categorie: voedsel, Status: opgelost / bevestigd</caption>
             <tbody>
                <tr>
                   <th>Code</th>
@@ -17,31 +17,25 @@
                </tr>
                <tr>
                   <th>Eerste symptomen</th>
-                  <td>2 februari 1990</td>
+                  <td>5 juni 1979</td>
                </tr>
                <tr>
                   <th>Meest recente voorkomen</th>
-                  <td>2 februari 1995</td>
+                  <td>4 juni 1984</td>
                </tr>
                <tr>
                   <th>Reactie</th>
                   <td>
                      <ul>
                         <li>
-                           <div>2 februari 1992
-
-<span title="Mild (255604002 - SNOMED CT)">Mild</span>
-                           </div>
+                           <div>4 juni 1981 licht</div>
                            <div>
                               <span title="Contact dermatitis (40275004 - SNOMED CT)">Contact dermatitis</span>
                            </div>
                            <div>Reactie op schaafwond</div>
                         </li>
                         <li>
-                           <div>2 februari 1990
-
-<span title="Moderate (6736007 - SNOMED CT)">Moderate</span>
-                           </div>
+                           <div>5 juni 1979 matig</div>
                            <div>
                               <span title="Diarrhoea (62315008 - SNOMED CT)">Diarrhoea</span>, <span title="Contact dermatitis (40275004 - SNOMED CT)">Contact dermatitis</span>
                            </div>
@@ -54,6 +48,10 @@
          </table>
       </div>
    </text>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6"/>
+      <value value="bgz-msz-patD-allergy1"/>
+   </identifier>
    <clinicalStatus value="resolved">
       <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
          <valueCodeableConcept>
@@ -96,11 +94,11 @@
       </coding>
    </code>
    <patient>
-      <reference value="Patient/HANNELORE-H-W--HANNIE-WENSVEEN-ELIK"/>
-      <display value="Hannelore H.W. Hannie Wensveen Çelik"/>
+      <reference value="Patient/FATIMA-SAIDA-F-S-K--FATIMA-AL-KSAR-EL-KEBIR-ELIK"/>
+      <display value="Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik"/>
    </patient>
-   <onsetDateTime value="1990-02-02"/>
-   <lastOccurrence value="1995-02-02"/>
+   <onsetDateTime value="1979-06-05"/>
+   <lastOccurrence value="1984-06-04"/>
    <reaction>
       <substance>
          <coding>
@@ -124,7 +122,7 @@
          </coding>
       </manifestation>
       <description value="Reactie op kleine sporen van melkeiwit."/>
-      <onset value="1990-02-02"/>
+      <onset value="1979-06-05"/>
       <severity value="moderate">
          <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
             <valueCodeableConcept>
@@ -160,7 +158,7 @@
          </coding>
       </manifestation>
       <description value="Reactie op schaafwond"/>
-      <onset value="1992-02-02"/>
+      <onset value="1981-06-04"/>
       <severity value="mild">
          <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
             <valueCodeableConcept>

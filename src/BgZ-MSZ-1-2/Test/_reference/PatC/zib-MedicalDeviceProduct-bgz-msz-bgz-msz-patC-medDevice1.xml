@@ -7,7 +7,7 @@
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <table>
-            <caption>Apparaat/Systeem. Patiënt: Huinink. Id: bgz-msz-patC-medDevice1 (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Status: actief</caption>
+            <caption>Apparaat/Systeem. Patiënt: de Boer. Id: bgz-msz-patC-medDevice1 (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Status: actief</caption>
             <tbody>
                <tr>
                   <th>Type</th>
@@ -32,7 +32,7 @@
       </coding>
    </type>
    <patient>
-      <reference value="Patient/HUININK"/>
-      <display value="Huinink"/>
+      <reference value="Patient/DE-BOER"/>
+      <display value="de Boer"/>
    </patient>
 </Device>

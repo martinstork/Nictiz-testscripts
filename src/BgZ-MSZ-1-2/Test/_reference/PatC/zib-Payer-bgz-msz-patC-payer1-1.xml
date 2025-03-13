@@ -7,7 +7,7 @@
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <table>
-            <caption>Verzekering/garantstelling. </caption>
+            <caption>Verzekering/garantstelling. Id: bgz-msz-patC-payer (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6)</caption>
             <tbody>
                <tr>
                   <th>Type</th>
@@ -20,8 +20,8 @@
                   <td> tot ${DATE, T, D, +183}</td>
                </tr>
                <tr>
-                  <th>abonnee</th>
-                  <td>Huinink</td>
+                  <th>verzekerde</th>
+                  <td>de Boer</td>
                </tr>
                <tr>
                   <th>Verzekerdenummer</th>
@@ -33,12 +33,16 @@
                </tr>
                <tr>
                   <th>begunstigde</th>
-                  <td>Huinink</td>
+                  <td>de Boer</td>
                </tr>
             </tbody>
          </table>
       </div>
    </text>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6"/>
+      <value value="bgz-msz-patC-payer"/>
+   </identifier>
    <type>
       <coding>
          <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.101.5.1"/>
@@ -47,13 +51,13 @@
       </coding>
    </type>
    <subscriber>
-      <reference value="Patient/HUININK"/>
-      <display value="Huinink"/>
+      <reference value="Patient/DE-BOER"/>
+      <display value="de Boer"/>
    </subscriber>
    <subscriberId value="999999999001"/>
    <beneficiary>
-      <reference value="Patient/HUININK"/>
-      <display value="Huinink"/>
+      <reference value="Patient/DE-BOER"/>
+      <display value="de Boer"/>
    </beneficiary>
    <period>
       <end value="${DATE, T, D, +183}"/>

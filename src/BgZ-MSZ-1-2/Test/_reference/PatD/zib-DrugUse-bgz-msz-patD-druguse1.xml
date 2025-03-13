@@ -7,11 +7,11 @@
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <table>
-            <caption>Observatie/bepaling. Subject: Hannelore H.W. Hannie Wensveen Çelik. Status: definitief</caption>
+            <caption>Observatie/bepaling. Subject: Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik. Id: bgz-msz-patD-druguse1 (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Status: definitief</caption>
             <tbody>
                <tr>
                   <th>Bepalingdatum/tijd</th>
-                  <td>Vanaf 2 februari 1998</td>
+                  <td>Vanaf 5 juni 1987</td>
                </tr>
                <tr>
                   <th>Code</th>
@@ -57,6 +57,10 @@
          </table>
       </div>
    </text>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6"/>
+      <value value="bgz-msz-patD-druguse1"/>
+   </identifier>
    <status value="final"/>
    <code>
       <coding>
@@ -66,11 +70,11 @@
       </coding>
    </code>
    <subject>
-      <reference value="Patient/HANNELORE-H-W--HANNIE-WENSVEEN-ELIK"/>
-      <display value="Hannelore H.W. Hannie Wensveen Çelik"/>
+      <reference value="Patient/FATIMA-SAIDA-F-S-K--FATIMA-AL-KSAR-EL-KEBIR-ELIK"/>
+      <display value="Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik"/>
    </subject>
    <effectivePeriod>
-      <start value="1998-02-02"/>
+      <start value="1987-06-05"/>
    </effectivePeriod>
    <valueCodeableConcept>
       <coding>

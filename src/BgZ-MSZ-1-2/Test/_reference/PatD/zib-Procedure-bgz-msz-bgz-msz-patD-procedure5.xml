@@ -7,14 +7,14 @@
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <table>
-            <caption>Verrichting. Subject: Hannelore H.W. Hannie Wensveen Çelik. Id: bgz-msz-patD-procedure5 (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Categorie: , Status: voltooid</caption>
+            <caption>Verrichting. Subject: Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik. Id: bgz-msz-patD-procedure5 (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Categorie: , Status: voltooid</caption>
             <tbody>
                <tr>
                   <td>
                      <span title="externe fixatie van bot (257838009 - SNOMED CT)">externe fixatie van bot</span>
                   </td>
                   <td>
-                     <div>Uitgevoerd: ${DATE, T, D, -10} - ${DATE, T, D, -10}</div>
+                     <div>Uitgevoerd: 22 juni 2008</div>
                   </td>
                </tr>
                <tr>
@@ -43,12 +43,12 @@
       </coding>
    </code>
    <subject>
-      <reference value="Patient/HANNELORE-H-W--HANNIE-WENSVEEN-ELIK"/>
-      <display value="Hannelore H.W. Hannie Wensveen Çelik"/>
+      <reference value="Patient/FATIMA-SAIDA-F-S-K--FATIMA-AL-KSAR-EL-KEBIR-ELIK"/>
+      <display value="Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik"/>
    </subject>
    <performedPeriod>
-      <start value="${DATE, T, D, -10}"/>
-      <end value="${DATE, T, D, -10}"/>
+      <start value="2008-06-22"/>
+      <end value="2008-06-22"/>
    </performedPeriod>
    <reasonReference>
       <reference value="Condition/zib-Problem-bgz-msz-bgz-msz-patD-problem4"/>

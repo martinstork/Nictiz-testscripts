@@ -7,7 +7,7 @@
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <table>
-            <caption>Apparaat/Systeem. Patiënt: Hannelore H.W. Hannie Wensveen Çelik. Id: bgz-msz-patD-medDevice3 (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Status: actief</caption>
+            <caption>Apparaat/Systeem. Patiënt: Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik. Id: bgz-msz-patD-medDevice3 (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Status: actief</caption>
             <tfoot>
                <tr>
                   <td colspan="2">mitella</td>
@@ -16,7 +16,9 @@
             <tbody>
                <tr>
                   <th>Type</th>
-                  <td/>
+                  <td>
+                     <span title="mitella voor ondersteuning van arm (700654009 - SNOMED CT)">mitella voor ondersteuning van arm</span>
+                  </td>
                </tr>
             </tbody>
          </table>
@@ -27,9 +29,16 @@
       <value value="bgz-msz-patD-medDevice3"/>
    </identifier>
    <status value="active"/>
+   <type>
+      <coding>
+         <system value="http://snomed.info/sct"/>
+         <code value="700654009"/>
+         <display value="mitella voor ondersteuning van arm"/>
+      </coding>
+   </type>
    <patient>
-      <reference value="Patient/HANNELORE-H-W--HANNIE-WENSVEEN-ELIK"/>
-      <display value="Hannelore H.W. Hannie Wensveen Çelik"/>
+      <reference value="Patient/FATIMA-SAIDA-F-S-K--FATIMA-AL-KSAR-EL-KEBIR-ELIK"/>
+      <display value="Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik"/>
    </patient>
    <note>
       <text value="mitella"/>

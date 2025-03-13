@@ -7,12 +7,11 @@
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <table>
-            <caption>Observatie/bepaling. Subject: Hannelore H.W. Hannie Wensveen Çelik. Categorie: <span title="bevinding betreffende laboratoriumonderzoek (49581000146104 - SNOMED CT)">bevinding betreffende laboratoriumonderzoek</span>, Status: <i>onbekend (ontbrekend gegeven)</i>
-            </caption>
+            <caption>Observatie/bepaling. Subject: Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik. Categorie: <span title="bevinding betreffende laboratoriumonderzoek (49581000146104 - SNOMED CT)">bevinding betreffende laboratoriumonderzoek</span>, Status: voorlopig</caption>
             <tbody>
                <tr>
                   <th>Bepalingdatum/tijd</th>
-                  <td colspan="3">${DATE, T, D, -10}T10:30:00+02:00</td>
+                  <td colspan="3">10:30:00, 22 juni 2008</td>
                </tr>
                <tr>
                   <th>Code</th>
@@ -30,18 +29,22 @@
                   </td>
                   <td>
                      <div>
-                        <span title="Normal Range (normal - referencerange-meaning)">Normal Range</span>
-
-150 10*3/uL - 400 10*3/uL</div>
+                        <span title="Normal Range (normal - referencerange-meaning)">Normal Range</span> 150 10*3/uL - 400 10*3/uL</div>
                   </td>
                </tr>
             </tbody>
          </table>
       </div>
    </text>
-   <status value="unknown">
-      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
-         <valueCode value="unknown"/>
+   <status value="preliminary">
+      <extension url="http://nictiz.nl/fhir/StructureDefinition/code-specification">
+         <valueCodeableConcept>
+            <coding>
+               <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.16.1"/>
+               <code value="preliminary"/>
+               <display value="Preliminary"/>
+            </coding>
+         </valueCodeableConcept>
       </extension>
    </status>
    <category>
@@ -59,10 +62,10 @@
       </coding>
    </code>
    <subject>
-      <reference value="Patient/HANNELORE-H-W--HANNIE-WENSVEEN-ELIK"/>
-      <display value="Hannelore H.W. Hannie Wensveen Çelik"/>
+      <reference value="Patient/FATIMA-SAIDA-F-S-K--FATIMA-AL-KSAR-EL-KEBIR-ELIK"/>
+      <display value="Fatima Saïda F.S.K. Fatima Al Ksar el Kebir Çelik"/>
    </subject>
-   <effectiveDateTime value="${DATE, T, D, -10}T10:30:00+02:00"/>
+   <effectiveDateTime value="2008-06-22T10:30:00+02:00"/>
    <valueQuantity>
       <value value="278"/>
       <unit value="10*3/uL"/>

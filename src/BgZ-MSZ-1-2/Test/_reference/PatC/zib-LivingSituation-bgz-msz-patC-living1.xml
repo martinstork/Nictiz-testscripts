@@ -7,8 +7,12 @@
       <status value="extensions"/>
       <div xmlns="http://www.w3.org/1999/xhtml">
          <table>
-            <caption>Observatie/bepaling. Subject: Huinink. Status: definitief</caption>
+            <caption>Observatie/bepaling. Subject: de Boer. Id: bgz-msz-patC-living (urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6), Status: definitief</caption>
             <tbody>
+               <tr>
+                  <th>Bepalingdatum/tijd</th>
+                  <td>3 augustus 2011</td>
+               </tr>
                <tr>
                   <th>Code</th>
                   <th>Waarde</th>
@@ -25,6 +29,10 @@
          </table>
       </div>
    </text>
+   <identifier>
+      <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.1.0.0.6"/>
+      <value value="bgz-msz-patC-living"/>
+   </identifier>
    <status value="final"/>
    <code>
       <coding>
@@ -34,9 +42,10 @@
       </coding>
    </code>
    <subject>
-      <reference value="Patient/HUININK"/>
-      <display value="Huinink"/>
+      <reference value="Patient/DE-BOER"/>
+      <display value="de Boer"/>
    </subject>
+   <effectiveDateTime value="2011-08-03"/>
    <valueCodeableConcept>
       <coding>
          <system value="urn:oid:2.16.840.1.113883.2.4.3.11.60.40.4.13.1"/>
