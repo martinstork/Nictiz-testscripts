@@ -80,7 +80,7 @@
          <value value="2"/>
          <unit value="{glas}/wk"/>
          <system value="http://unitsofmeasure.org"/>
-         <code value="{{glas}/w}"/>
+         <code value="{{glas}/wk}"/>
       </valueQuantity>
    </component>
 </Observation>
