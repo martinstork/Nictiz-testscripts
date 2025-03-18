@@ -367,4 +367,5 @@
         <nts:include value="assert.response.numResources" scope="common"
             resource="Appointment" count="0"/>
     </test>
+    
 </TestScript>
