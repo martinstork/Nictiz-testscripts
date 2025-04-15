@@ -19,17 +19,22 @@
      <variable>
          <name value="taskid"/>
          <description value="The resource id of the Task"/>
+         <sourceId value="{taskid}"/>
      </variable>
      
      <variable>
          <name value="servicerequestid"/>
-         <description value="The resource id of the Servicerequest"/>
+         <description value="The resource id from the ServiceRequest"/>
+         <expression value="Task.focus.reference.substring(Task.focus.reference.lastIndexOf('/') + 1)"/>
+         <sourceId value="{servicerequestid}"/>
      </variable>
      
      
      <variable>
          <name value="compositionid"/>
-         <description value="The resource id of the Composition"/>
+         <description value="The resource id from the Composition"/>
+         <expression value="ServiceRequest.supportingInfo.first().reference.substring(ServiceRequest.supportingInfo.first().reference.lastIndexOf('/') + 1)"/>
+         <sourceId value="{compositionid}"/>
      </variable>    
     </nts:component>
     
