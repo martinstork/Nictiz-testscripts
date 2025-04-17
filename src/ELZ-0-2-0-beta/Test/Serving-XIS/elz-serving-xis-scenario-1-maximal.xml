@@ -19,14 +19,15 @@
      <variable>
          <name value="taskid"/>
          <description value="The resource id of the Task"/>
-         <sourceId value="{taskid}"/>
-     </variable>
+         <expression value="Task.id"/>
+         <sourceId value="fixture-task"/>
+      </variable>
      
      <variable>
          <name value="servicerequestid"/>
          <description value="The resource id from the ServiceRequest"/>
          <expression value="Task.focus.reference.substring(Task.focus.reference.lastIndexOf('/') + 1)"/>
-         <sourceId value="{servicerequestid}"/>
+         <sourceId value="01-serve-Task"/>
      </variable>
      
      
@@ -34,7 +35,7 @@
          <name value="compositionid"/>
          <description value="The resource id from the Composition"/>
          <expression value="ServiceRequest.supportingInfo.first().reference.substring(ServiceRequest.supportingInfo.first().reference.lastIndexOf('/') + 1)"/>
-         <sourceId value="{compositionid}"/>
+         <sourceId value="02-serve-ServiceRequest"/>
      </variable>    
     </nts:component>
     
@@ -44,7 +45,7 @@
             value="Serve Task resource"/>
         <nts:include value="test.server.successfulRead" scope="common"
             resource="Task"
-            params="/${taskid}"
+            params="${taskid}"
             useToken="true"/>
         
         <nts:contentAsserts href="resources/task-hg-VerwijzingHuisartsParamedicusMaximaalbericht.xml" 
@@ -56,7 +57,7 @@
         <description value="Serve ServiceRequest resource"/>
         <nts:include value="test.server.successfulRead" scope="common" 
             resource="ServiceRequest"
-            params="/${servicerequestid}"
+            params="$/{servicerequestid}"
             useToken="true"/>
 
         <nts:contentAsserts href="resources/servicerequest-hg-VerwijzingHuisartsParamedicusMaximaalbericht.xml"
@@ -68,7 +69,7 @@
         <description value="Serve Composition resource with all the references by using the Document operation"/>
         <nts:include value="test.server.successfulRead" scope="common" 
             resource="Composition"
-            params="/${compositionid}"
+            params="$/{compositionid}"
             useToken="true"/>
    </test>
     
