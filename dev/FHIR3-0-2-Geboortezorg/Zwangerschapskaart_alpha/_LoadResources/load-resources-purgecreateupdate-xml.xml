@@ -238,13 +238,6 @@
          <reference value="../_reference/Echo-Casus1/medmij-gbz-bc-PregnancyUltraSound-2g321a41-2126-15od-1258-020000000000.xml"/>
       </resource>
    </fixture>
-   <fixture id="DiagnosticReport-7a5a4ff7-14dc-4683-98d5-e8e0c8c18028">
-      <autocreate value="false"/>
-      <autodelete value="false"/>
-      <resource>
-         <reference value="../_reference/Echo-Casus3/medmij-gbz-bc-PregnancyUltraSound-7a5a4ff7-14dc-4683-98d5-e8e0c8c18028.xml"/>
-      </resource>
-   </fixture>
    <fixture id="DiagnosticReport-9g721a81-2126-15od-1258-020000000000">
       <autocreate value="false"/>
       <autodelete value="false"/>
@@ -599,7 +592,7 @@
       <autocreate value="false"/>
       <autodelete value="false"/>
       <resource>
-         <reference value="../_reference/Echo-Casus1/medmij-gbz-bc-PlacentaLocalization-7381000146107-1b28536-7943-14rp-1287-040000000000.xml"/>
+         <reference value="../_reference/Echo-Casus1/medmij-gbz-bc-FetusObservation-7381000146107-1b28536-7943-14rp-1287-040000000000.xml"/>
       </resource>
    </fixture>
    <fixture id="Observation-1c2e536-3923-14up-3287-040000000000">
@@ -942,7 +935,7 @@
       <autocreate value="false"/>
       <autodelete value="false"/>
       <resource>
-         <reference value="../_reference/Echo-Casus1/medmij-gbz-bc-PregnancyUltraSoundGeneralFindings-290201000146101-5e413e4k-4123-14ik-1257-030000000000.xml"/>
+         <reference value="../_reference/Echo-Casus1/medmij-gbz-bc-FetusObservation-290201000146101-5e413e4k-4123-14ik-1257-030000000000.xml"/>
       </resource>
    </fixture>
    <fixture id="Observation-5f617a89-2123-39ag-2255-010000000000">
@@ -971,13 +964,6 @@
       <autodelete value="false"/>
       <resource>
          <reference value="../_reference/Verloskunde-Casus3/medmij-gbz-bc-PerinatalDeath-60b7f715-3e30-4cb2-badd-962def709a6a.xml"/>
-      </resource>
-   </fixture>
-   <fixture id="Observation-612fb4cc-b27f-4a65-8205-fc51d9b7560a">
-      <autocreate value="false"/>
-      <autodelete value="false"/>
-      <resource>
-         <reference value="../_reference/Echo-Casus3/medmij-gbz-bc-FetusObservation-459053006-612fb4cc-b27f-4a65-8205-fc51d9b7560a.xml"/>
       </resource>
    </fixture>
    <fixture id="Observation-6136ebfa1-834c-4a3c-9dd4-45603db47542">
@@ -1841,13 +1827,6 @@
          <reference value="../_reference/Verloskunde-Casus1/medmij-gbz-nl-core-organization-20b066b2-622a-47e3-b6a6-154fba88966e.xml"/>
       </resource>
    </fixture>
-   <fixture id="Organization-20cc97fe-a1d2-4140-b492-19e50b6cf49f">
-      <autocreate value="false"/>
-      <autodelete value="false"/>
-      <resource>
-         <reference value="../_reference/Echo-Casus1/medmij-gbz-nl-core-organization-20cc97fe-a1d2-4140-b492-19e50b6cf49f.xml"/>
-      </resource>
-   </fixture>
    <fixture id="Organization-21973780-dfe2-4434-9c2e-c5c6cb2b9f26">
       <autocreate value="false"/>
       <autodelete value="false"/>
@@ -2177,13 +2156,6 @@
          <reference value="../_reference/Verloskunde-Casus2/bc-DeliveryProcedure-e52a3ef6-32ff-4fdd-b315-070c217e119d.xml"/>
       </resource>
    </fixture>
-   <fixture id="ReferralRequest-02492973-7a1a-43b4-8fa2-fae2528d2ab4">
-      <autocreate value="false"/>
-      <autodelete value="false"/>
-      <resource>
-         <reference value="../_reference/Echo-Casus1/medmij-gbz-bc-ReferralRequest-02492973-7a1a-43b4-8fa2-fae2528d2ab4.xml"/>
-      </resource>
-   </fixture>
    <fixture id="RelatedPerson-180ff317-c7cf-4ab6-8a57-9f989cc5c600">
       <autocreate value="false"/>
       <autodelete value="false"/>
@@ -2357,11 +2329,6 @@
       <name value="DiagnosticReport-2g321a41-2126-15od-1258-020000000000-id"/>
       <expression value="DiagnosticReport.id"/>
       <sourceId value="DiagnosticReport-2g321a41-2126-15od-1258-020000000000"/>
-   </variable>
-   <variable>
-      <name value="DiagnosticReport-7a5a4ff7-14dc-4683-98d5-e8e0c8c18028-id"/>
-      <expression value="DiagnosticReport.id"/>
-      <sourceId value="DiagnosticReport-7a5a4ff7-14dc-4683-98d5-e8e0c8c18028"/>
    </variable>
    <variable>
       <name value="DiagnosticReport-9g721a81-2126-15od-1258-020000000000-id"/>
@@ -2882,11 +2849,6 @@
       <name value="Observation-60b7f715-3e30-4cb2-badd-962def709a6a-id"/>
       <expression value="Observation.id"/>
       <sourceId value="Observation-60b7f715-3e30-4cb2-badd-962def709a6a"/>
-   </variable>
-   <variable>
-      <name value="Observation-612fb4cc-b27f-4a65-8205-fc51d9b7560a-id"/>
-      <expression value="Observation.id"/>
-      <sourceId value="Observation-612fb4cc-b27f-4a65-8205-fc51d9b7560a"/>
    </variable>
    <variable>
       <name value="Observation-6136ebfa1-834c-4a3c-9dd4-45603db47542-id"/>
@@ -3504,11 +3466,6 @@
       <sourceId value="Organization-20b066b2-622a-47e3-b6a6-154fba88966e"/>
    </variable>
    <variable>
-      <name value="Organization-20cc97fe-a1d2-4140-b492-19e50b6cf49f-id"/>
-      <expression value="Organization.id"/>
-      <sourceId value="Organization-20cc97fe-a1d2-4140-b492-19e50b6cf49f"/>
-   </variable>
-   <variable>
       <name value="Organization-21973780-dfe2-4434-9c2e-c5c6cb2b9f26-id"/>
       <expression value="Organization.id"/>
       <sourceId value="Organization-21973780-dfe2-4434-9c2e-c5c6cb2b9f26"/>
@@ -3742,11 +3699,6 @@
       <name value="Procedure-e52a3ef6-32ff-4fdd-b315-070c217e119d-id"/>
       <expression value="Procedure.id"/>
       <sourceId value="Procedure-e52a3ef6-32ff-4fdd-b315-070c217e119d"/>
-   </variable>
-   <variable>
-      <name value="ReferralRequest-02492973-7a1a-43b4-8fa2-fae2528d2ab4-id"/>
-      <expression value="ReferralRequest.id"/>
-      <sourceId value="ReferralRequest-02492973-7a1a-43b4-8fa2-fae2528d2ab4"/>
    </variable>
    <variable>
       <name value="RelatedPerson-180ff317-c7cf-4ab6-8a57-9f989cc5c600-id"/>
@@ -5072,32 +5024,6 @@
                <value value="Bearer f56cd5b1-0916-41a2-80cf-a9ecc2db2620"/>
             </requestHeader>
             <sourceId value="DiagnosticReport-2g321a41-2126-15od-1258-020000000000"/>
-         </operation>
-      </action>
-      <action>
-         <assert>
-            <description value="Confirm that the returned HTTP status is 200(OK) or 201(Created)."/>
-            <operator value="in"/>
-            <responseCode value="200,201"/>
-            <warningOnly value="false"/>
-         </assert>
-      </action>
-      <action>
-         <operation>
-            <type>
-               <system value="http://terminology.hl7.org/CodeSystem/testscript-operation-codes"/>
-               <code value="updateCreate"/>
-            </type>
-            <resource value="DiagnosticReport"/>
-            <accept value="xml"/>
-            <contentType value="xml"/>
-            <encodeRequestUrl value="true"/>
-            <params value="/${DiagnosticReport-7a5a4ff7-14dc-4683-98d5-e8e0c8c18028-id}"/>
-            <requestHeader>
-               <field value="Authorization"/>
-               <value value="Bearer f56cd5b1-0916-41a2-80cf-a9ecc2db2620"/>
-            </requestHeader>
-            <sourceId value="DiagnosticReport-7a5a4ff7-14dc-4683-98d5-e8e0c8c18028"/>
          </operation>
       </action>
       <action>
@@ -7802,32 +7728,6 @@
                <value value="Bearer f56cd5b1-0916-41a2-80cf-a9ecc2db2620"/>
             </requestHeader>
             <sourceId value="Observation-60b7f715-3e30-4cb2-badd-962def709a6a"/>
-         </operation>
-      </action>
-      <action>
-         <assert>
-            <description value="Confirm that the returned HTTP status is 200(OK) or 201(Created)."/>
-            <operator value="in"/>
-            <responseCode value="200,201"/>
-            <warningOnly value="false"/>
-         </assert>
-      </action>
-      <action>
-         <operation>
-            <type>
-               <system value="http://terminology.hl7.org/CodeSystem/testscript-operation-codes"/>
-               <code value="updateCreate"/>
-            </type>
-            <resource value="Observation"/>
-            <accept value="xml"/>
-            <contentType value="xml"/>
-            <encodeRequestUrl value="true"/>
-            <params value="/${Observation-612fb4cc-b27f-4a65-8205-fc51d9b7560a-id}"/>
-            <requestHeader>
-               <field value="Authorization"/>
-               <value value="Bearer f56cd5b1-0916-41a2-80cf-a9ecc2db2620"/>
-            </requestHeader>
-            <sourceId value="Observation-612fb4cc-b27f-4a65-8205-fc51d9b7560a"/>
          </operation>
       </action>
       <action>
@@ -11046,32 +10946,6 @@
             <accept value="xml"/>
             <contentType value="xml"/>
             <encodeRequestUrl value="true"/>
-            <params value="/${Organization-20cc97fe-a1d2-4140-b492-19e50b6cf49f-id}"/>
-            <requestHeader>
-               <field value="Authorization"/>
-               <value value="Bearer f56cd5b1-0916-41a2-80cf-a9ecc2db2620"/>
-            </requestHeader>
-            <sourceId value="Organization-20cc97fe-a1d2-4140-b492-19e50b6cf49f"/>
-         </operation>
-      </action>
-      <action>
-         <assert>
-            <description value="Confirm that the returned HTTP status is 200(OK) or 201(Created)."/>
-            <operator value="in"/>
-            <responseCode value="200,201"/>
-            <warningOnly value="false"/>
-         </assert>
-      </action>
-      <action>
-         <operation>
-            <type>
-               <system value="http://terminology.hl7.org/CodeSystem/testscript-operation-codes"/>
-               <code value="updateCreate"/>
-            </type>
-            <resource value="Organization"/>
-            <accept value="xml"/>
-            <contentType value="xml"/>
-            <encodeRequestUrl value="true"/>
             <params value="/${Organization-21973780-dfe2-4434-9c2e-c5c6cb2b9f26-id}"/>
             <requestHeader>
                <field value="Authorization"/>
@@ -12092,32 +11966,6 @@
                <value value="Bearer f56cd5b1-0916-41a2-80cf-a9ecc2db2620"/>
             </requestHeader>
             <sourceId value="Procedure-e52a3ef6-32ff-4fdd-b315-070c217e119d"/>
-         </operation>
-      </action>
-      <action>
-         <assert>
-            <description value="Confirm that the returned HTTP status is 200(OK) or 201(Created)."/>
-            <operator value="in"/>
-            <responseCode value="200,201"/>
-            <warningOnly value="false"/>
-         </assert>
-      </action>
-      <action>
-         <operation>
-            <type>
-               <system value="http://terminology.hl7.org/CodeSystem/testscript-operation-codes"/>
-               <code value="updateCreate"/>
-            </type>
-            <resource value="ReferralRequest"/>
-            <accept value="xml"/>
-            <contentType value="xml"/>
-            <encodeRequestUrl value="true"/>
-            <params value="/${ReferralRequest-02492973-7a1a-43b4-8fa2-fae2528d2ab4-id}"/>
-            <requestHeader>
-               <field value="Authorization"/>
-               <value value="Bearer f56cd5b1-0916-41a2-80cf-a9ecc2db2620"/>
-            </requestHeader>
-            <sourceId value="ReferralRequest-02492973-7a1a-43b4-8fa2-fae2528d2ab4"/>
          </operation>
       </action>
       <action>
