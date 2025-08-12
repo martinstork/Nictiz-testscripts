@@ -1,4 +1,3 @@
-# Test
 # Nictiz TestScripts
 
 This repository contains the test and qualification materials for the FHIR based standards that Nictiz maintains. These materials consist of FHIR TestScript resources plus associated fixtures.
