@@ -5,8 +5,7 @@
    <version value="r4-mp9-3.0.0-beta"/>
    <name value="Medication Process 9 3.0.0-beta  - Consolidation - MedicationAgreement - Retrieve - Scenario 12o.x"/>
    <description value="Scenario 12o.x - TEST Medicatiegegevens Scenarioset 12o (Consolidatie)"/>
-   <nts:authToken patientResourceId="nl-core-Patient-mp9-AvandeXXX-Toorn"
-                  nts:in-targets="MedMij"/>
+   <nts:authToken patientResourceId="AvandeXXX-Toorn" nts:in-targets="MedMij"/>
    <nts:includeDateT value="no"/>
    <test id="Scenario-12o-x">
       <name value="Scenario 12o.x"/>

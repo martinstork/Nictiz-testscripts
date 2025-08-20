@@ -5,8 +5,7 @@
    <version value="r4-mp9-3.0.0-beta"/>
    <name value="Medication Process 9 3.0.0-beta  - MedicationUse - Serve - Scenario 9.x"/>
    <description value="Scenario 9.x - KWAL Medicatiegegevens MGB script 9"/>
-   <nts:authToken patientResourceId="nl-core-Patient-mp9-CXXX-Jol"
-                  nts:in-targets="MedMij"/>
+   <nts:authToken patientResourceId="CXXX-Jol" nts:in-targets="MedMij"/>
    <nts:includeDateT value="no"/>
    <test id="Scenario-9-x">
       <name value="Scenario 9.x"/>

@@ -5,8 +5,7 @@
    <version value="r4-mp9-3.0.0-beta"/>
    <name value="Medication Process 9 3.0.0-beta  - VariableDosingRegimen - Retrieve - Scenario 13.x"/>
    <description value="Scenario 13.x - TEST Medicatiegegevens WDS Scenarioset 13"/>
-   <nts:authToken patientResourceId="nl-core-Patient-mp9-R-XXX-Smitsz"
-                  nts:in-targets="MedMij"/>
+   <nts:authToken patientResourceId="R-XXX-Smitsz" nts:in-targets="MedMij"/>
    <nts:includeDateT value="no"/>
    <test id="Scenario-13-x">
       <name value="Scenario 13.x"/>
